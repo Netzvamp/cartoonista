@@ -1,7 +1,6 @@
-import requests
 import logging
-from bs4 import BeautifulSoup
 import time
+from .exceptions import CartoonError
 if __name__ != "__main__":
     from .cartoonist import Cartoonist
 
@@ -10,6 +9,12 @@ logger = logging.getLogger(__name__)
 
 
 def dilbert_scraper(years: list):
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ModuleNotFoundError:
+        raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. T"
+                           "his can be done with 'pip install cartoonista[scraping]'")
     filenames = []
     for year in years:
         logger.info(f"Scraping year {year}")

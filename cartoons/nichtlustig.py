@@ -1,9 +1,7 @@
 import re
 import json
-import requests
 import logging
-from bs4 import BeautifulSoup
-
+from .exceptions import CartoonError
 if __name__ != "__main__":
     from .cartoonist import Cartoonist
 
@@ -15,6 +13,12 @@ def nl_scraper():
     """
     Filenames are in an javascript object on the mainpage.
     """
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ModuleNotFoundError:
+        raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. T"
+                           "his can be done with 'pip install cartoonista[scraping]'")
     soup = BeautifulSoup(requests.get("https://joscha.com/nichtlustig").text, 'html.parser')
     script = soup.findAll('script')[3].string
 

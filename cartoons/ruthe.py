@@ -1,7 +1,6 @@
 import re
-import requests
 import logging
-from bs4 import BeautifulSoup
+from .exceptions import CartoonError
 if __name__ != "__main__":
     from .cartoonist import Cartoonist
 
@@ -10,6 +9,12 @@ logger = logging.getLogger(__name__)
 
 
 def rr_scraper():
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ModuleNotFoundError:
+        raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. T"
+                           "his can be done with 'pip install cartoonista[scraping]'")
     soup = BeautifulSoup(requests.get("https://ruthe.de/").text, 'html.parser')
     match = re.search("/cartoons/strip_([0-9]*).jpg", soup.select("#wrapper_cartoon img")[0]["src"])
     if match:

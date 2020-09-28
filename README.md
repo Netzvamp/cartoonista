@@ -1,6 +1,9 @@
 # Cartoonista - A python cartoon library
 
-An extendable framework to get (random) cartoons image links from these websites:
+A library to get a random cartoon image url from 11000+ cartoons. 
+It also contains the scrapers for many cartoon websites.
+
+## Sites
 
 English:
 * https://xkcd.com
@@ -12,8 +15,6 @@ German:
 * https://martin-perscheid.de
 * https://islieb.de
 * https://www.schoenescheisse.de/
-
-Thats more than 11.000 cartoons and it's relative easy to add more...
 
 This lib includes all scrapers for these sites, but it ships with all data, so these are only needed for manual updating.
 
@@ -53,6 +54,8 @@ print("Nr of cartoonists:", len(Cartoons.get_all_cartoonists()))
 ## Manual updating
 
 Manual updating isn't strictly needed, cause the lib ships with all data, but it's possible.
+
+Install the requirements with ```pip install pip install cartoonista[scraping]``` or manually install requests and beautifulsoup4.
 
 Run the ```scrape.py``` or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
 

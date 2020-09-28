@@ -13,4 +13,4 @@ from .schoenescheisse import schoenescheisse
 from .dilbert import dilbert_2015_2020
 from .exceptions import CartoonError
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"

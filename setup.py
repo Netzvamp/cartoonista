@@ -17,7 +17,8 @@ setuptools.setup(
     version=__version__,
     author="Robert Lieback",
     author_email="robertlieback@zetabyte.de",
-    description="A python library to give random cartoons to users and scrape cartoon image url from websites.",
+    description="A library to get a random cartoon image url from 11000+ cartoons. "
+                "It also contains the scrapers for many cartoon websites.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Netzvamp/cartoonista",
@@ -33,9 +34,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Topic :: Games/Entertainment"
     ],
-    install_requires=[
-        "requests",
-        "beautifulsoup4",
-    ],
+    extras_require={
+        'scraping': [
+            "requests",
+            "beautifulsoup4",
+        ]
+    },
     python_requires='>=3.6',
 )

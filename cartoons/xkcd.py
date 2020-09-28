@@ -1,7 +1,5 @@
-import requests
 import logging
-from bs4 import BeautifulSoup
-
+from .exceptions import CartoonError
 if __name__ != "__main__":
     from .cartoonist import Cartoonist
 
@@ -10,6 +8,12 @@ logger = logging.getLogger(__name__)
 
 
 def xkcd_scraper():
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ModuleNotFoundError:
+        raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. T"
+                           "his can be done with 'pip install cartoonista[scraping]'")
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                       'Brave Chrome/85.0.4183.121 Safari/537.36'

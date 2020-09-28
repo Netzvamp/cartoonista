@@ -1,7 +1,6 @@
 import re
-import requests
 import logging
-from bs4 import BeautifulSoup
+from .exceptions import CartoonError
 if __name__ != "__main__":
     from .cartoonist import Cartoonist
 
@@ -10,6 +9,12 @@ logger = logging.getLogger(__name__)
 
 
 def islieb_scraper():
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ModuleNotFoundError:
+        raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. T"
+                           "his can be done with 'pip install cartoonista[scraping]'")
     soup = BeautifulSoup(requests.get("https://islieb.de/").text, 'html.parser')
 
     match = re.search("/page/([0-9]*)/", soup.select(".archive-pagination a")[3]["href"])
