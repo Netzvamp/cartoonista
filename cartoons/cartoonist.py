@@ -56,9 +56,12 @@ class Cartoonist:
 
         if len(arts):
             art = random.choices(arts, weights=weights, k=1)[0]
-            img = cls.__objects[art].base_url + cls.data[art]["filenames"][random.randrange(0, len(cls.data[art]["filenames"])-1)]
-
-            return {"img": img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
+            img = cls.data[art]["filenames"][random.randrange(0, len(cls.data[art]["filenames"]) - 1)]
+            if isinstance(img, str):
+                return {"img": cls.__objects[art].base_url + img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
+            elif isinstance(img, dict):
+                img["img"] = cls.__objects[art].base_url + img["img"]
+                return {**img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
         else:
             raise CartoonError("Oh noes! No cartoonists with that names found!")
 

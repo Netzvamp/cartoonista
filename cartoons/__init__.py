@@ -10,7 +10,6 @@ from .perscheid import perscheid
 from .xkcd import xkcd
 from .islieb import islieb
 from .schoenescheisse import schoenescheisse
-from .dilbert import dilbert_2015_2020
 from .exceptions import CartoonError
 
-__version__ = "0.1.5"
+__version__ = "0.2.0"

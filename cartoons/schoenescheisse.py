@@ -20,11 +20,11 @@ def schoenescheisse_scraper():
     while nextpage_link:
         soup = BeautifulSoup(requests.get(nextpage).text, 'html.parser')
 
-        imgs = soup.select("article img")
-        for img in imgs:
-            img = img["src"].replace("https://www.schoenescheisse.de/wp-content/uploads/", "")
-            filenames.append(img)
-            logger.info("Added https://www.schoenescheisse.de/wp-content/uploads/" + img)
+        for article in soup.select("article"):
+            if article.img:
+                src = article.img["src"].replace("https://www.schoenescheisse.de/wp-content/uploads/", "")
+                filenames.append({"img": src, "title": article.h2.a.text})
+                logger.info("Added https://www.schoenescheisse.de/wp-content/uploads/" + src)
 
         nextpage_link = soup.select(".nav-previous a")
         if nextpage_link:

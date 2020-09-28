@@ -7,7 +7,6 @@ It also contains the scrapers for many cartoon websites.
 
 English:
 * https://xkcd.com
-* https://dilbert.com
 
 German:
 * https://joscha.com/nichtlustig
@@ -57,6 +56,6 @@ Manual updating isn't strictly needed, cause the lib ships with all data, but it
 
 Install the requirements with ```pip install pip install cartoonista[scraping]``` or manually install requests and beautifulsoup4.
 
-Run the ```scrape.py``` or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
+Run the ```scrape.py``` from the repo or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
 
 This takes a long time (1h+), cause we have to do some sleeps on delbert.com, to not get banned.

@@ -26,8 +26,17 @@ def xkcd_scraper():
     for page in pages:
         page_soup = BeautifulSoup(requests.get("https://xkcd.com" + page["href"], headers=headers).text, 'html.parser')
         try:
-            img = page_soup.select("#comic img")[0]["src"].replace("//imgs.xkcd.com/comics/", "")
-            filenames.append(img)
+            element = page_soup.select("#comic img")[0]
+            if "imgs.xkcd.com/comics/" not in element["src"]:  # some special sites we have to skip
+                break
+            img = element["src"].replace("//imgs.xkcd.com/comics/", "")
+            if len(element["title"]):
+                if len(element["alt"]):
+                    filenames.append({"img": img, "txt": element["title"], "title": element["alt"]})
+                else:
+                    filenames.append({"img": img, "txt": element["title"]})
+            else:
+                filenames.append(img)
             logger.info("Added https://imgs.xkcd.com/comics/" + img)
         except IndexError:
             pass

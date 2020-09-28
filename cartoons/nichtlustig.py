@@ -32,7 +32,7 @@ def nl_scraper():
             filenames = []
             logger.info("Found cartoonList on joscha.com")
             for img in nl:
-                filenames.append(img["image"])
+                filenames.append({"img": img["image"], "title": img["title"]})
 
             return filenames
     else:
