@@ -17,15 +17,11 @@ It's relative easy to add more...
 
 This lib includes all scrapers for these sites, but it ships already with all data, so these are only needed for manual updating.
 
-## Manual updating
+## Install
 
-Manual updating isn't strictly needed, cause the lib ships with all data, but it's possible.
+```pip install cartoonista```
 
-Run the ```scrape.py``` or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
-
-This takes a long time (1h+), cause we have to do some sleeps on delbert.com, to not get banned. 
-
-## Examples
+## Examples / Documentation
 
 ```python
 from cartoons import Cartoons
@@ -55,3 +51,11 @@ print("Single Cartoonist", Cartoons.get_random_cartoon(cartoonists=["schoenesche
 print("Random without filter", Cartoons.get_random_cartoon())
 # >>> Random without filter {'img': 'https://imgs.xkcd.com/comics/code_quality_3.png', 'credits': 'Randall Munroe', 'website': 'https://xkcd.com'}
 ```
+
+## Manual updating
+
+Manual updating isn't strictly needed, cause the lib ships with all data, but it's possible.
+
+Run the ```scrape.py``` or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
+
+This takes a long time (1h+), cause we have to do some sleeps on delbert.com, to not get banned.
