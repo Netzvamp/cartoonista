@@ -51,28 +51,27 @@ class Cartoonist:
         if not exclude_tags:
             exclude_tags = []
 
-        # choose cartoonists weighted with the number of cartoons
         weights = []
-        arts = []
+        filtered_cartoonists = []
 
         # Apply filters
         for _art in Cartoonist.data:
             if (cartoonists and _art in cartoonists) and (languages and cls.__objects[_art].language in languages) and not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
                 if weighted:
                     weights.append(len(cls.data[_art]["filenames"]))
-                arts.append(_art)
+                filtered_cartoonists.append(_art)
 
-        if len(arts):
-            if weighted:
-                art = random.choices(arts, weights=weights)[0]
+        if len(filtered_cartoonists):
+            if weighted:  # choose cartoonists weighted by the number of cartoons
+                cartoonists = random.choices(filtered_cartoonists, weights=weights)[0]
             else:
-                art = random.choices(arts)[0]
-            img = cls.data[art]["filenames"][random.randrange(0, len(cls.data[art]["filenames"]) - 1)]
+                cartoonists = random.choices(filtered_cartoonists)[0]
+            img = cls.data[cartoonists]["filenames"][random.randrange(0, len(cls.data[cartoonists]["filenames"]) - 1)]
             if isinstance(img, str):
-                return {"img": cls.__objects[art].base_url + img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
+                return {"img": cls.__objects[cartoonists].base_url + img, "credits": cls.__objects[cartoonists].credits, "website": cls.__objects[cartoonists].website}
             elif isinstance(img, dict):
-                img["img"] = cls.__objects[art].base_url + img["img"]
-                return {**img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
+                img["img"] = cls.__objects[cartoonists].base_url + img["img"]
+                return {**img, "credits": cls.__objects[cartoonists].credits, "website": cls.__objects[cartoonists].website}
         else:
             raise CartoonError("Oh noes! No cartoonists with that names and criteria found!")
 

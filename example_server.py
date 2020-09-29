@@ -9,24 +9,33 @@ class GetHandler(BaseHTTPRequestHandler):
         self.send_header('Content-Type', 'text/html; charset=utf-8')
         self.end_headers()
         cartoon = Cartoons.get_random_cartoon()
-        print(cartoon)
+        if cartoon.get("txt", ""):
+            cartoon["txt"] = cartoon["txt"] + "<br>"
         html = f"""<html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
 <style>
     body {{ 
         text-align: center; 
-        font-family: Arial, Helvetica, sans-serif; 
-        margin:30px; 
+        font-family: "Comic Sans MS", cursive, sans-serif; 
         background: linear-gradient(
         to bottom,  rgba(216,246,255,1) 0%,rgba(255,255,255,0.32) 68%,rgba(255,255,255,0) 100%); }} 
- img {{display: block;
-  margin-left: auto;
-  margin-right: auto;}}</style>
+    .enjoy {{position: absolute; left: 15px; top: 40px;z-index:200; transform: rotate(-30deg);}}
+    .cartoon {{ 
+        margin-left: auto; margin-right: auto;
+        max-height: 100vh; 
+}}
+    .txt {{ font-weight: bold; margin: 10px; padding: 10px; border: 2px dotted #afafaf; background: #ffffff}}
+    img {{background: #ffffff; max-height: 78vh; min-height: 40vh}}
+</style>
 </head>
 <body>
-<h2>Enjoy your day &#128516;</h2>
-<div id="cartoon"><h1>{cartoon.get("title", "")}</h1><a href="{cartoon["website"]}"><img src="{cartoon["img"]}"></a><b>{cartoon.get("txt", "")}</b><div>&copy; {cartoon["credits"]}</div></div>
+<div class="enjoy"><h2>Enjoy your day &#128516;</h2></div>
+<div class="cartoon">
+<div><h1>{cartoon.get("title", "")}</h1></div>
+<div class="image"><img id="image" src="{cartoon["img"]}" onclick="document.getElementById('image').style.maxHeight='none'"></div>
+<div class="txt">{cartoon.get("txt", "")}<a href="{cartoon["website"]}">&copy; {cartoon["credits"]}</a></div></div>
 </body>
 </html>
         """

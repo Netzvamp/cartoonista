@@ -23,7 +23,7 @@ def explosm_scraper():
         
         img = soup.select_one("#main-comic")
         if img:
-            img = img["src"].replace("//files.explosm.net/comics/", "").split("?")[0]
+            img = img["src"].replace("//files.explosm.net/comics/", "")
             author = soup.select_one("#comic-area #comic-author").text.strip("\n").replace("\n", " ").strip("\n")
             filenames.append({"img": img, "txt": author})
             logger.info("Added https://files.explosm.net/comics/" + img + " Text: " + author)
