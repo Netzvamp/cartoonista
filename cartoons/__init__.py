@@ -10,6 +10,7 @@ from .perscheid import perscheid
 from .xkcd import xkcd
 from .islieb import islieb
 from .schoenescheisse import schoenescheisse
+from .explosm import explosm
 from .exceptions import CartoonError
 
 __version__ = "0.2.0"

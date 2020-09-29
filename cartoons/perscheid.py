@@ -39,7 +39,8 @@ if __name__ != "__main__":
         website="https://martin-perscheid.de",
         language="de",
         base_url="https://martin-perscheid.de/image/cartoon/",
-        scraper=perscheid_scraper
+        scraper=perscheid_scraper,
+        tags=["offensive"]
     )
 else:
     logging.basicConfig(level=logging.INFO)

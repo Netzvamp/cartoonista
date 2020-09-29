@@ -12,3 +12,10 @@ print("Only english", Cartoons.get_random_cartoon(languages=["en"]))
 print("Filter given cartoonists list by language", Cartoons.get_random_cartoon(
     cartoonists=["xkcd.com", "ruthe.de", "nichtlustig.de"], languages=["en"]))
 print("Single Cartoonist", Cartoons.get_random_cartoon(cartoonists=["schoenescheisse.de"]))
+
+print(
+    "Filter by tag",
+    Cartoons.get_random_cartoon(
+        cartoonists=["xkcd.com", "explosm.net", "martin-perscheid.de"], exclude_tags=["offensive"]
+    )
+)  # returns only xkcd

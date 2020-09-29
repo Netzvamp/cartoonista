@@ -7,13 +7,14 @@ It also contains the scrapers for many cartoon websites.
 
 English:
 * https://xkcd.com
+* https://explosm.net
 
 German:
 * https://joscha.com/nichtlustig
 * https://ruthe.de
 * https://martin-perscheid.de
 * https://islieb.de
-* https://www.schoenescheisse.de/
+* https://www.schoenescheisse.de
 
 This lib includes all scrapers for these sites, but it ships with all data, so these are only needed for manual updating.
 
@@ -23,32 +24,32 @@ This lib includes all scrapers for these sites, but it ships with all data, so t
 
 ## Examples / Documentation
 
-```python
-from cartoons import Cartoons
+    from cartoons import Cartoons
 
-print("Random without filter", Cartoons.get_random_cartoon())
-# >>> Random without filter {'img': 'https://imgs.xkcd.com/comics/code_quality_3.png', 'credits': 'Randall Munroe', 'website': 'https://xkcd.com'}
-print("Only ruthe.de or xkcd.com", Cartoons.get_random_cartoon(cartoonists=["xkcd.com", "ruthe.de"]))
-# >>> Only ruthe.de or xkcd.com {'img': 'https://ruthe.de/cartoons/strip_0716.jpg', 'credits': 'Ralf Ruthe', 'website': 'https://ruthe.de'}
-print("Only english", Cartoons.get_random_cartoon(languages=["en"]))
-# >>> Only english {'img': 'https://imgs.xkcd.com/comics/old_game_worlds.png', 'credits': 'Randall Munroe', 'website': 'https://xkcd.com'}
-print("Filter given cartoonist list by language", Cartoons.get_random_cartoon(cartoonists=["xkcd.com", "ruthe.de", "nichtlustig.de"], languages=["en"]))
-# >>>  Filter given cartoonist list by language {'img': 'https://imgs.xkcd.com/comics/tab_explosion.png', 'credits': 'Randall Munroe', 'website': 'https://xkcd.com'}
+    Cartoons.get_random_cartoon(
+        cartoonists=["xkcd.com", "ruthe.de"],  # optional
+        languages=["en"],  # optional
+        exclude_tags=["offensive"]  # optional
+    )
 
-# Get a list of all cartoonists and there infos
-print("All cartoonists and there infos:")
-print(Cartoons.get_all_cartoonists())
-# >>>  [{'credits': 'Joscha Sauer',
-# >>>   'language': 'de',
-# >>>   'name': 'nichtlustig.de',
-# >>>   'website': 'https://joscha.com/nichtlustig'},
-# >>>  {'credits': 'Ralf Ruthe',
-# >>>   'language': 'de',
-# >>>   'name': 'ruthe.de',
-# >>>   'website': 'https://ruthe.de'},...
-print("Nr of cartoonists:", len(Cartoons.get_all_cartoonists()))
-# >>>  Nr of cartoonists: 9
-```
+This is the main function to get a random cartoon. There are optional filter parameters:
+* cartoonists: Get only from these cartoonists. You can get the names and all infos with ```Cartoons.get_all_cartoonists()```
+* language: Get only in this languages. There are currently only "en" and "de" cartoons.
+* tags: filter cartoonists by tags. Possible values: "offensive", "nsfw"
+The cartoons have to match all filters.
+
+It returns something like this:
+
+    {
+        'img': 'https://imgs.xkcd.com/comics/standard_model_changes.png', 
+        'title': 'Standard Model Changes', 
+        'txt': "Bugs are spin 1/2 particles, unless it's particularly windy.", 
+        'credits': 'Randall Munroe', 
+        'website': 'https://xkcd.com',
+        'tags': []
+    }
+
+Title/txt could be placed over/under the image and it would be fair to give credit and link to website.
 
 ## Manual updating
 
@@ -56,6 +57,4 @@ Manual updating isn't strictly needed, cause the lib ships with all data, but it
 
 Install the requirements with ```pip install pip install cartoonista[scraping]``` or manually install requests and beautifulsoup4.
 
-Run the ```scrape.py``` from the repo or start scraping by running ```Cartoons.start_scraping()``` in the IDLE. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])``` cartoonists
-
-This takes a long time (1h+), cause we have to do some sleeps on delbert.com, to not get banned.
+Run the ```scrape.py``` from the repo (that gives you some logging output) or start scraping by running ```python -c "exec(\"from cartoons import Cartoons\nCartoons.start_scraping()\")"```. It's also possible to update only some cartoonist with ```Cartoons.start_scraping(cartoonists=["islieb.de", "xkcd.com"])```.

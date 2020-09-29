@@ -12,13 +12,17 @@ class Cartoonist:
     data = {}
     __objects = {}
     
-    def __init__(self, name: str, credits: str, website: str, language: str, base_url: str, scraper: callable):
+    def __init__(self, name: str, credits: str, website: str, language: str, base_url: str, scraper: callable, tags: list = None):
         self.name: str = name
         self.credits: str = credits
         self.website: str = website
         self.language: str = language
         self.base_url: str = base_url
         self.scraper: callable = scraper
+        if not tags:
+            self.tags: list = []
+        else:
+            self.tags: list = tags
         Cartoonist.__objects[self.name] = self
 
         logger.debug(f"Added {self.name}.")
@@ -39,18 +43,20 @@ class Cartoonist:
             pass  # The scraper get some work
 
     @classmethod
-    def get_random_cartoon(cls, cartoonists: list = None, languages: list = None):
+    def get_random_cartoon(cls, cartoonists: list = None, languages: list = None, exclude_tags: list = None):
         if not languages:
             languages = ["de", "en"]
         if not cartoonists:
             cartoonists = [_art for _art in Cartoonist.data]
+        if not exclude_tags:
+            exclude_tags = []
 
         # choose cartoonists weighted with the number of cartoons
         weights = []
         arts = []
 
         for _art in Cartoonist.data:
-            if (cartoonists and _art in cartoonists) and (languages and cls.__objects[_art].language in languages):
+            if (cartoonists and _art in cartoonists) and (languages and cls.__objects[_art].language in languages) and not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
                 weights.append(len(cls.data[_art]["filenames"]))
                 arts.append(_art)
 
@@ -63,13 +69,21 @@ class Cartoonist:
                 img["img"] = cls.__objects[art].base_url + img["img"]
                 return {**img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}
         else:
-            raise CartoonError("Oh noes! No cartoonists with that names found!")
+            raise CartoonError("Oh noes! No cartoonists with that names and criteria found!")
 
     @classmethod
     def get_all_cartoonists(cls):
         cartoonists = []
         for obj in cls.__objects:
-            cartoonists.append({"name": cls.__objects[obj].name, "credits": cls.__objects[obj].credits, "website": cls.__objects[obj].website, "language": cls.__objects[obj].language})
+            cartoonists.append(
+                {
+                    "name": cls.__objects[obj].name,
+                    "credits": cls.__objects[obj].credits,
+                    "website": cls.__objects[obj].website,
+                    "language": cls.__objects[obj].language,
+                    "tags": cls.__objects[obj].tags
+                }
+            )
         return cartoonists
 
     @classmethod
