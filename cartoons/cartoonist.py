@@ -43,7 +43,7 @@ class Cartoonist:
             pass  # The scraper get some work
 
     @classmethod
-    def get_random_cartoon(cls, cartoonists: list = None, languages: list = None, exclude_tags: list = None):
+    def get_random_cartoon(cls, cartoonists: list = None, languages: list = None, exclude_tags: list = None, weighted: bool = True):
         if not languages:
             languages = ["de", "en"]
         if not cartoonists:
@@ -55,13 +55,18 @@ class Cartoonist:
         weights = []
         arts = []
 
+        # Apply filters
         for _art in Cartoonist.data:
             if (cartoonists and _art in cartoonists) and (languages and cls.__objects[_art].language in languages) and not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
-                weights.append(len(cls.data[_art]["filenames"]))
+                if weighted:
+                    weights.append(len(cls.data[_art]["filenames"]))
                 arts.append(_art)
 
         if len(arts):
-            art = random.choices(arts, weights=weights, k=1)[0]
+            if weighted:
+                art = random.choices(arts, weights=weights)[0]
+            else:
+                art = random.choices(arts)[0]
             img = cls.data[art]["filenames"][random.randrange(0, len(cls.data[art]["filenames"]) - 1)]
             if isinstance(img, str):
                 return {"img": cls.__objects[art].base_url + img, "credits": cls.__objects[art].credits, "website": cls.__objects[art].website}

@@ -19,3 +19,5 @@ print(
         cartoonists=["xkcd.com", "explosm.net", "martin-perscheid.de"], exclude_tags=["offensive"]
     )
 )  # returns only xkcd
+
+print("Unweighted random", Cartoons.get_random_cartoon(weighted=False))

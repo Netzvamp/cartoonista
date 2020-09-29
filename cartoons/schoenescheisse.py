@@ -41,7 +41,8 @@ if __name__ != "__main__":
         website="https://www.schoenescheisse.de/",
         language="de",
         base_url="https://www.schoenescheisse.de/wp-content/uploads/",
-        scraper=schoenescheisse_scraper
+        scraper=schoenescheisse_scraper,
+        tags=["offensive"]
     )
 else:
     logging.basicConfig(level=logging.INFO)

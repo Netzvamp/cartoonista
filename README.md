@@ -29,13 +29,15 @@ This lib includes all scrapers for these sites, but it ships with all data, so t
     Cartoons.get_random_cartoon(
         cartoonists=["xkcd.com", "ruthe.de"],  # optional
         languages=["en"],  # optional
-        exclude_tags=["offensive"]  # optional
+        exclude_tags=["offensive"],  # optional
+        weighted=False  # optional
     )
 
 This is the main function to get a random cartoon. There are optional filter parameters:
 * cartoonists: Get only from these cartoonists. You can get the names and all infos with ```Cartoons.get_all_cartoonists()```
 * language: Get only in this languages. There are currently only "en" and "de" cartoons.
-* tags: filter cartoonists by tags. Possible values: "offensive", "nsfw"
+* exclude_tags: Exclude cartoonists by tags. Possible values: "offensive", "nsfw"
+* weighted: Default is to give cartoonists a weight by the amount of there cartoons, to prevent double cartoons for cartoonists with small amounts. This can be disabled, to randomize even over all cartoonists. 
 The cartoons have to match all filters.
 
 It returns something like this:
