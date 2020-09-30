@@ -13,4 +13,4 @@ from .schoenescheisse import schoenescheisse
 from .explosm import explosm
 from .exceptions import CartoonError
 
-__version__ = "0.4.1"
+__version__ = "0.4.2"
