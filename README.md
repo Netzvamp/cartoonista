@@ -3,7 +3,7 @@
 A library to get a random cartoon image url from 11000+ cartoons. 
 It also contains the scrapers for many cartoon websites.
 
-:tada: :tada: :tada: A product of the finest german overengineering to solve a non existing problem with a complicated solution. :tada: :tada: :tada: 
+:tada: :satisfied: :man_facepalming: **A product of the finest german overengineering to solve a non existing problem with a complicated solution.** :man_facepalming: :satisfied: :tada: 
 
 ## Sites
 
