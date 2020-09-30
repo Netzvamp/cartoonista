@@ -56,7 +56,9 @@ class Cartoonist:
 
         # Apply filters
         for _art in Cartoonist.data:
-            if (cartoonists and _art in cartoonists) and (languages and cls.__objects[_art].language in languages) and not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
+            if (cartoonists and _art in cartoonists) and \
+                    (languages and cls.__objects[_art].language in languages) and \
+                    not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
                 if weighted:
                     weights.append(len(cls.data[_art]["filenames"]))
                 filtered_cartoonists.append(_art)
@@ -68,10 +70,19 @@ class Cartoonist:
                 cartoonists = random.choices(filtered_cartoonists)[0]
             img = cls.data[cartoonists]["filenames"][random.randrange(0, len(cls.data[cartoonists]["filenames"]) - 1)]
             if isinstance(img, str):
-                return {"img": cls.__objects[cartoonists].base_url + img, "credits": cls.__objects[cartoonists].credits, "website": cls.__objects[cartoonists].website}
+                return {
+                    "img": cls.__objects[cartoonists].base_url + img,
+                    "credits": cls.__objects[cartoonists].credits,
+                    "website": cls.__objects[cartoonists].website
+                }
             elif isinstance(img, dict):
-                img["img"] = cls.__objects[cartoonists].base_url + img["img"]
-                return {**img, "credits": cls.__objects[cartoonists].credits, "website": cls.__objects[cartoonists].website}
+                src = cls.__objects[cartoonists].base_url + img["img"]
+                return {
+                    **img,
+                    "img": src,
+                    "credits": cls.__objects[cartoonists].credits,
+                    "website": cls.__objects[cartoonists].website
+                }
         else:
             raise CartoonError("Oh noes! No cartoonists with that names and criteria found!")
 
