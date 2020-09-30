@@ -1,4 +1,5 @@
 from http.server import BaseHTTPRequestHandler
+import webbrowser
 from cartoons import Cartoons
 
 
@@ -22,19 +23,25 @@ class GetHandler(BaseHTTPRequestHandler):
         background: linear-gradient(
         to bottom,  rgba(216,246,255,1) 0%,rgba(255,255,255,0.32) 68%,rgba(255,255,255,0) 100%); }} 
     .enjoy {{position: absolute; left: 15px; top: 40px;z-index:200; transform: rotate(-30deg);}}
-    .cartoon {{ 
-        margin-left: auto; margin-right: auto;
-        max-height: 100vh; 
+    #cartoon {{ 
+        /*margin-left: auto; margin-right: auto;
+        max-height: 100vh;*/ 
+        position: absolute;
+    /*height: 200px;
+    width: 400px;*/
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }}
     .txt {{ font-weight: bold; margin: 10px; padding: 10px; border: 2px dotted #afafaf; background: #ffffff}}
-    img {{background: #ffffff; max-height: 78vh; min-height: 40vh}}
+    img {{background: #ffffff; max-height: 78vh; min-height: 45vh}}
 </style>
 </head>
 <body>
 <div class="enjoy"><h2>Enjoy your day &#128516;</h2></div>
-<div class="cartoon">
+<div id="cartoon">
 <div><h1>{cartoon.get("title", "")}</h1></div>
-<div class="image"><img id="image" src="{cartoon["img"]}" onclick="document.getElementById('image').style.maxHeight='none'"></div>
+<div><img id="image" src="{cartoon["img"]}" onclick="document.getElementById('image').style.maxHeight='none';document.getElementById('cartoon').style.transform = 'translate(-50%,0)'"></div>
 <div class="txt">{cartoon.get("txt", "")}<a href="{cartoon["website"]}">&copy; {cartoon["credits"]}</a></div></div>
 </body>
 </html>
@@ -46,4 +53,5 @@ if __name__ == '__main__':
     from http.server import HTTPServer
     server = HTTPServer(('localhost', 8080), GetHandler)
     print('Starting server, use <Ctrl-C> to stop')
+    webbrowser.open('http://127.0.0.1:8080')
     server.serve_forever()
