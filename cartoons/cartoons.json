@@ -27755,6 +27755,1774 @@
             }
         ]
     },
+    "loadingartist": {
+        "filenames": [
+            {
+                "img": "2011/07/2011-01-04-born.png",
+                "txt": "Born"
+            },
+            {
+                "img": "2011/07/2011-01-05-dreams.png",
+                "txt": "Dreams"
+            },
+            {
+                "img": "2011/07/2011-01-06-webcomics.png",
+                "txt": "Webcomics"
+            },
+            {
+                "img": "2011/07/2011-01-07-brainstorming.png",
+                "txt": "Brainstorming"
+            },
+            {
+                "img": "2011/07/2011-01-08-ive-made-a-huge-mistake.png",
+                "txt": "I\u2019ve Made A Huge Mistake"
+            },
+            {
+                "img": "2011/07/2011-01-09-bird.png",
+                "txt": "Bird"
+            },
+            {
+                "img": "2011/07/2011-01-10-programming.png",
+                "txt": "Programming"
+            },
+            {
+                "img": "2011/07/2011-01-11-new-friend.png",
+                "txt": "New Friend"
+            },
+            {
+                "img": "2011/07/2011-01-12-one-down.png",
+                "txt": "One Down"
+            },
+            {
+                "img": "2011/07/2011-01-13-ad-space.png",
+                "txt": "Ad Space"
+            },
+            {
+                "img": "2011/07/2011-01-14-missing-something.png",
+                "txt": "Missing Something"
+            },
+            {
+                "img": "2011/07/2011-01-15-blackjack-theory.png",
+                "txt": "Blackjack Theory"
+            },
+            {
+                "img": "2011/07/2011-01-16-blue.png",
+                "txt": "Blue"
+            },
+            {
+                "img": "2011/07/2011-01-25-rock-star.png",
+                "txt": "Rock Star"
+            },
+            {
+                "img": "2011/07/2011-01-31-hell.png",
+                "txt": "Hell"
+            },
+            {
+                "img": "2011/07/2011-02-03-roast-chicken.png",
+                "txt": "Roast Chicken"
+            },
+            {
+                "img": "2011/07/2011-02-14-happy-valentines.png",
+                "txt": "Happy Valentines"
+            },
+            {
+                "img": "2011/07/2011-02-20-pizza-night.png",
+                "txt": "Pizza Night"
+            },
+            {
+                "img": "2011/07/2011-03-08-ring-ring.png",
+                "txt": "Ring Ring"
+            },
+            {
+                "img": "2011/07/2011-03-29-massively-multiplayer-online-role-play-games.png",
+                "txt": "Massively Multiplayer Online Role Play Games"
+            },
+            {
+                "img": "2011/07/2011-04-03-deep.png",
+                "txt": "Deep"
+            },
+            {
+                "img": "2011/07/2011-04-10-breakfast-cereal.png",
+                "txt": "Breakfast Cereal"
+            },
+            {
+                "img": "2011/07/2011-04-12-the-next-logical-step.png",
+                "txt": "The Next Logical Step"
+            },
+            {
+                "img": "2011/07/2011-04-15-i-wish-these-socks-were-a-little-bit-darker.png",
+                "txt": "I Wish These Socks Were A Little Bit Darker"
+            },
+            {
+                "img": "2011/07/2011-04-22-notepad.png",
+                "txt": "Notepad"
+            },
+            {
+                "img": "2011/04/2011-04-23-haters-gonna-hate.png",
+                "txt": "Haters Gonna Hate"
+            },
+            {
+                "img": "2011/07/2011-04-24-island.png",
+                "txt": "Island"
+            },
+            {
+                "img": "2011/07/2011-05-01-dating-tips.png",
+                "txt": "Dating Tips"
+            },
+            {
+                "img": "2011/07/2011-05-08-mobile-phones.png",
+                "txt": "Mobile Phones"
+            },
+            {
+                "img": "2011/07/2011-05-13-my-first-day.png",
+                "txt": "My First Day"
+            },
+            {
+                "img": "2011/07/2011-05-22-the-red-balloon.png",
+                "txt": "The Red Balloon"
+            },
+            {
+                "img": "2011/07/2011-05-28-infomercial.png",
+                "txt": "Infomercial"
+            },
+            {
+                "img": "2011/07/2011-05-31-my-first-day-part-two.png",
+                "txt": "My First Day Part Two"
+            },
+            {
+                "img": "2011/07/2011-06-13-words.png",
+                "txt": "Words"
+            },
+            {
+                "img": "2011/07/2011-06-23-emergency.png",
+                "txt": "Emergency"
+            },
+            {
+                "img": "2011/07/2011-07-02-fan-mail.png",
+                "txt": "Fan Mail"
+            },
+            {
+                "img": "2011/07/2011-07-10-phone-static.png",
+                "txt": "Phone Static"
+            },
+            {
+                "img": "2011/07/2011-07-20-hostdumpster.png",
+                "txt": "Hostdumpster"
+            },
+            {
+                "img": "2011/07/2011-07-28-pick-up-lines.png",
+                "txt": "Pick Up Lines"
+            },
+            {
+                "img": "2011/08/2011-08-01-everyone-can-be-beautiful.png",
+                "txt": "Everyone Can Be Beautiful"
+            },
+            {
+                "img": "2011/08/2011-08-08-time-machine.png",
+                "txt": "Time Machine"
+            },
+            {
+                "img": "2011/08/2011-08-15-dark-times.png",
+                "txt": "Dark Times"
+            },
+            {
+                "img": "2011/08/2011-08-29-strings.png",
+                "txt": "Strings"
+            },
+            {
+                "img": "2011/09/2011-09-05-fans-fans-fans.png",
+                "txt": "Fans Fans Fans"
+            },
+            {
+                "img": "2011/09/2011-09-12-super-powers.png",
+                "txt": "Super Powers"
+            },
+            {
+                "img": "2011/09/2011-09-22-bathroom-bathroom.png",
+                "txt": "Bathroom Bathroom"
+            },
+            {
+                "img": "2011/09/2011-09-27-seashells.png",
+                "txt": "Seashells"
+            },
+            {
+                "img": "2011/10/2011-10-03-powercut.png",
+                "txt": "Powercut"
+            },
+            {
+                "img": "2011/10/2011-10-10-horror-movie.png",
+                "txt": "Horror Movie"
+            },
+            {
+                "img": "2011/10/2011-10-17-pet-rock.png",
+                "txt": "Pet Rock"
+            },
+            {
+                "img": "2011/10/2011-10-25-candy-craving.png",
+                "txt": "Candy Craving"
+            },
+            {
+                "img": "2011/10/2011-10-31-halloween-banana.png",
+                "txt": "Halloween Banana"
+            },
+            {
+                "img": "2011/11/2011-11-08-hungry-for-ideas.png",
+                "txt": "Hungry For Ideas"
+            },
+            {
+                "img": "2011/11/2011-11-14-why-try.png",
+                "txt": "Why Try"
+            },
+            {
+                "img": "2011/11/2011-11-21-red-apple.png",
+                "txt": "Red Apple"
+            },
+            {
+                "img": "2011/11/2011-11-28-no-more-cake.png",
+                "txt": "No More Cake"
+            },
+            {
+                "img": "2012/02/2011-12-05-karma.png",
+                "txt": "Karma"
+            },
+            {
+                "img": "2011/12/2011-12-14-the-flow-of-snow.png",
+                "txt": "The Flow Of Snow"
+            },
+            {
+                "img": "2011/12/2011-12-21-the-snow-must-go-on.png",
+                "txt": "The Snow Must Go On"
+            },
+            {
+                "img": "2011/12/2011-12-25-merry-christmas-2011.png",
+                "txt": "Merry Christmas 2011"
+            },
+            {
+                "img": "2011/12/2011-12-31-snowasis.png",
+                "txt": "Snowasis"
+            },
+            {
+                "img": "2012/01/2012-01-04-one-year.png",
+                "txt": "One Year"
+            },
+            {
+                "img": "2012/01/2012-01-09-resolutions.png",
+                "txt": "Resolutions"
+            },
+            {
+                "img": "2012/01/2012-01-16-snow-place-like-home.png",
+                "txt": "Snow Place Like Home"
+            },
+            {
+                "img": "2012/01/2012-01-23-magic-trick.png",
+                "txt": "Magic Trick"
+            },
+            {
+                "img": "2012/01/2012-01-30-plants-are-quiet.png",
+                "txt": "Plants Are Quiet"
+            },
+            {
+                "img": "2012/02/2012-02-10-supply-sans-demand.png",
+                "txt": "Supply Sans Demand"
+            },
+            {
+                "img": "2012/02/2012-02-13-big-day-for-cupid.png",
+                "txt": "Big Day For Cupid"
+            },
+            {
+                "img": "2012/02/2012-02-22-bored-at-sea.png",
+                "txt": "Bored At Sea"
+            },
+            {
+                "img": "2012/02/2012-02-27-bread.png",
+                "txt": "Bread"
+            },
+            {
+                "img": "2012/03/2012-03-05-break-shot.png",
+                "txt": "Break Shot"
+            },
+            {
+                "img": "2012/03/2012-03-13-hula-hoop.png",
+                "txt": "Hula Hoop"
+            },
+            {
+                "img": "2012/03/2012-03-19-frozen-pleas.png",
+                "txt": "Frozen Pleas"
+            },
+            {
+                "img": "2012/03/2012-03-27-life-is-complicated.png",
+                "txt": "Life Is Complicated"
+            },
+            {
+                "img": "2012/04/2012-04-02-misfire.png",
+                "txt": "Misfire"
+            },
+            {
+                "img": "2012/04/2012-04-09-the-rarest-egg.png",
+                "txt": "The Rarest Egg"
+            },
+            {
+                "img": "2012/04/2012-04-16-my-first-autograph.png",
+                "txt": "My First Autograph"
+            },
+            {
+                "img": "2012/04/2012-04-24-focus.png",
+                "txt": "Focus"
+            },
+            {
+                "img": "2012/05/2012-05-07-love-is-in-the-air.png",
+                "txt": "Love Is In The Air"
+            },
+            {
+                "img": "2012/05/2012-05-14-hold-on-a-second.png",
+                "txt": "Hold On A Second"
+            },
+            {
+                "img": "2012/05/2012-05-23-upside-tune.png",
+                "txt": "Upside Tune"
+            },
+            {
+                "img": "2012/05/2012-05-28-crumbling-standards.png",
+                "txt": "Crumbling Standards"
+            },
+            {
+                "img": "2012/06/2012-06-04-vomitron.png",
+                "txt": "Vomitron"
+            },
+            {
+                "img": "2012/06/2012-06-12-sidetracked.png",
+                "txt": "Sidetracked"
+            },
+            {
+                "img": "2012/06/2012-06-18-food-for-thought.png",
+                "txt": "Food For Thought"
+            },
+            {
+                "img": "2012/06/2012-06-26-initiation.png",
+                "txt": "Initiation"
+            },
+            {
+                "img": "2012/07/2012-07-03-too-much-computer.png",
+                "txt": "Too Much Computer"
+            },
+            {
+                "img": "2012/07/2012-07-09-the-end-is-near.png",
+                "txt": "The End Is Near"
+            },
+            {
+                "img": "2012/07/2012-07-23-drained.png",
+                "txt": "Drained"
+            },
+            {
+                "img": "2012/08/2012-08-01-one-nil.png",
+                "txt": "One Nil"
+            },
+            {
+                "img": "2012/08/2012-08-06-lost-and-found.png",
+                "txt": "Lost And Found"
+            },
+            {
+                "img": "2012/08/2012-08-13-hugs-for-nothing.png",
+                "txt": "Hugs For Nothing"
+            },
+            {
+                "img": "2012/08/2012-08-20-stargazer.png",
+                "txt": "Stargazer"
+            },
+            {
+                "img": "2012/08/2012-08-29-inspidered.png",
+                "txt": "Inspidered"
+            },
+            {
+                "img": "2012/09/2012-09-10-mankind-is-magnificent.png",
+                "txt": "Mankind Is Magnificent"
+            },
+            {
+                "img": "2012/09/2012-09-17-status-slap.png",
+                "txt": "Status Slap"
+            },
+            {
+                "img": "2012/09/2012-09-24-a-self-portrait.png",
+                "txt": "A Self Portrait"
+            },
+            {
+                "img": "2012/10/2012-10-02-my-biggest-fear.png",
+                "txt": "My Biggest Fear"
+            },
+            {
+                "img": "2012/10/2012-10-15-plants-deserve-better.png",
+                "txt": "Plants Deserve Better"
+            },
+            {
+                "img": "2012/10/2012-10-25-my-first-convention.png",
+                "txt": "My First Convention"
+            },
+            {
+                "img": "2012/10/2012-10-29-hello-halloween.png",
+                "txt": "Hello Halloween"
+            },
+            {
+                "img": "2012/11/2012-11-07-adrift.png",
+                "txt": "Adrift"
+            },
+            {
+                "img": "2012/11/2012-11-19-soul-mate.png",
+                "txt": "Soul Mate"
+            },
+            {
+                "img": "2012/12/2012-12-11-happy-holidays.png",
+                "txt": "Happy Holidays"
+            },
+            {
+                "img": "2013/01/2013-01-07-happy-new-enthusiasm.png",
+                "txt": "Happy New Enthusiasm"
+            },
+            {
+                "img": "2013/01/2013-01-15-everyone-makes-milkshakes.png",
+                "txt": "Everyone Makes Milkshakes"
+            },
+            {
+                "img": "2013/01/2013-01-23-salty-tears.png",
+                "txt": "Salty Tears"
+            },
+            {
+                "img": "2013/01/2013-01-29-do-the-robot-1.png",
+                "txt": "Do The Robot"
+            },
+            {
+                "img": "2013/02/2013-02-14-valentines-card.png",
+                "txt": "Valentines Card"
+            },
+            {
+                "img": "2013/02/2013-02-25-long-live-this-king.png",
+                "txt": "Long Live This King"
+            },
+            {
+                "img": "2013/03/2013-03-06-business-plan.png",
+                "txt": "Business Plan"
+            },
+            {
+                "img": "2013/03/2013-03-13-life-support.png",
+                "txt": "Life Support"
+            },
+            {
+                "img": "2013/03/2013-03-26-cheesy.png",
+                "txt": "Cheesy"
+            },
+            {
+                "img": "2013/04/2013-04-02-this-is-a-stick-up.png",
+                "txt": "This Is A Stick Up"
+            },
+            {
+                "img": "2013/04/2013-04-09-taking-sides.png",
+                "txt": "Taking Sides"
+            },
+            {
+                "img": "2013/04/2013-04-29-cat-and-i.png",
+                "txt": "Cat And I"
+            },
+            {
+                "img": "2013/05/2013-05-06-sunny-side-up.png",
+                "txt": "Sunny Side Up"
+            },
+            {
+                "img": "2013/05/2013-05-08-i-made-this.png",
+                "txt": "I Made This"
+            },
+            {
+                "img": "2013/06/2013-06-05-out-of-control.png",
+                "txt": "Out Of Control"
+            },
+            {
+                "img": "2013/07/2013-07-11-food-chain.png",
+                "txt": "Food Chain"
+            },
+            {
+                "img": "2013/09/2013-09-11-safety-first.png",
+                "txt": "Safety First"
+            },
+            {
+                "img": "2013/10/2013-10-07-rainy-days.png",
+                "txt": "Rainy Days"
+            },
+            {
+                "img": "2013/11/2013-11-11-be-confident.png",
+                "txt": "Be Confident"
+            },
+            {
+                "img": "2013/11/2013-11-25-burning-question.png",
+                "txt": "Burning Question"
+            },
+            {
+                "img": "2013/12/2013-12-02-every-day-is-the-same.png",
+                "txt": "Every Day Is The Same"
+            },
+            {
+                "img": "2013/12/2013-12-09-photo-opportunity.png",
+                "txt": "Photo Opportunity"
+            },
+            {
+                "img": "2013/12/2013-12-16-my-best-friend.png",
+                "txt": "My Best Friend"
+            },
+            {
+                "img": "2014/01/2014-01-06-happy-new-ye.gif",
+                "txt": "Happy New Ye"
+            },
+            {
+                "img": "2014/01/2014-01-28-overbored.png",
+                "txt": "Overbored"
+            },
+            {
+                "img": "2014/02/2014-02-13-from-blue.png",
+                "txt": "From Blue"
+            },
+            {
+                "img": "2014/02/2014-02-21-not-that-funny.png",
+                "txt": "Not That Funny"
+            },
+            {
+                "img": "2014/03/2014-03-06-no-signal.png",
+                "txt": "No Signal"
+            },
+            {
+                "img": "2014/03/2014-03-15-making-money.png",
+                "txt": "Making Money"
+            },
+            {
+                "img": "2014/03/2014-03-28-open-for-business.png",
+                "txt": "Open For Business"
+            },
+            {
+                "img": "2014/04/2014-04-03-going-going-ghost.png",
+                "txt": "Going Going Ghost"
+            },
+            {
+                "img": "2014/04/2014-04-21-i-met-someone.png",
+                "txt": "I Met Someone"
+            },
+            {
+                "img": "2014/05/2014-05-20-stars-in-your-eyes.png",
+                "txt": "Stars In Your Eyes"
+            },
+            {
+                "img": "2014/06/2014-06-05-checking-the-stats.png",
+                "txt": "Checking The Stats"
+            },
+            {
+                "img": "2014/06/2014-06-12-too-easy.png",
+                "txt": "Too Easy"
+            },
+            {
+                "img": "2014/06/2014-06-21-hired-help.gif",
+                "txt": "Hired Help"
+            },
+            {
+                "img": "2014/06/2014-06-26-launched.png",
+                "txt": "Launched"
+            },
+            {
+                "img": "2014/07/2014-07-03-man-enough.png",
+                "txt": "Man Enough"
+            },
+            {
+                "img": "2014/07/2014-07-10-good-times.png",
+                "txt": "Good Times"
+            },
+            {
+                "img": "2014/07/2014-07-24-now-and-never.png",
+                "txt": "Now And Never"
+            },
+            {
+                "img": "2014/08/2014-07-31-conflict-of-disinterest.png",
+                "txt": "Conflict Of Disinterest"
+            },
+            {
+                "img": "2014/08/2014-08-07-picture-perfect.png",
+                "txt": "Picture Perfect"
+            },
+            {
+                "img": "2014/08/2014-08-14-high-five.png",
+                "txt": "High Five"
+            },
+            {
+                "img": "2014/08/2014-08-21-drawn-back.jpg",
+                "txt": "Drawn Back"
+            },
+            {
+                "img": "2014/09/2014-09-04-motivation.jpg",
+                "txt": "Motivation"
+            },
+            {
+                "img": "2014/09/2014-09-11-perfect-match.jpg",
+                "txt": "Perfect Match"
+            },
+            {
+                "img": "2014/09/2014-09-25-born-ready.jpg",
+                "txt": "Born Ready"
+            },
+            {
+                "img": "2014/11/2014-11-27-fishing-for-success.jpg",
+                "txt": "Fishing For Success"
+            },
+            {
+                "img": "2014/12/2014-12-04-born-lucky.jpg",
+                "txt": "Born Lucky"
+            },
+            {
+                "img": "2014/12/2014-12-11-treenagers1.jpg",
+                "txt": "Treenagers"
+            },
+            {
+                "img": "2014/12/2014-12-18-gift-giving.jpg",
+                "txt": "Gift Giving"
+            },
+            {
+                "img": "2015/01/2015-01-08-no-years-resolutions.jpg",
+                "txt": "No Year\u2019s Resolutions"
+            },
+            {
+                "img": "2015/01/2015-01-22-help.jpg",
+                "txt": "Help"
+            },
+            {
+                "img": "2015/02/2015-02-12-love-game.jpg",
+                "txt": "Love Game"
+            },
+            {
+                "img": "2015/03/2015-03-19-internet-time.jpg",
+                "txt": "Internet Time"
+            },
+            {
+                "img": "2015/03/2015-03-26-my-last-day.jpg",
+                "txt": "My Last Day"
+            },
+            {
+                "img": "2015/04/2015-04-09-lifted-spirits.jpg",
+                "txt": "Lifted Spirits"
+            },
+            {
+                "img": "2015/04/2015-04-16-dead-inside.jpg",
+                "txt": "Dead Inside"
+            },
+            {
+                "img": "2015/04/2015-04-23-long-game.jpg",
+                "txt": "Long Game"
+            },
+            {
+                "img": "2015/05/2015-04-30-what-to-do.jpg",
+                "txt": "What To Do"
+            },
+            {
+                "img": "2015/05/2015-05-07-life-lessons.jpg",
+                "txt": "Life Lessons"
+            },
+            {
+                "img": "2015/05/2015-05-14-social-marketing.jpg",
+                "txt": "Social Marketing"
+            },
+            {
+                "img": "2015/05/2015-05-21-duty.jpg",
+                "txt": "Duty"
+            },
+            {
+                "img": "2015/05/2015-05-28-new-update.jpg",
+                "txt": "New Update"
+            },
+            {
+                "img": "2015/06/2015-06-04-mama.jpg",
+                "txt": "Mama"
+            },
+            {
+                "img": "2015/06/2015-06-11-so-much-to-do.jpg",
+                "txt": "So Much To Do"
+            },
+            {
+                "img": "2015/06/2015-06-18-matchmaking.jpg",
+                "txt": "Matchmaking"
+            },
+            {
+                "img": "2015/06/2015-06-25-happy-birthday-to-me.jpg",
+                "txt": "Happy Birthday To Me"
+            },
+            {
+                "img": "2015/07/2015-07-02-message-in-a-bottle.jpg",
+                "txt": "Message in a Bottle"
+            },
+            {
+                "img": "2015/07/2015-07-16-undone.jpg",
+                "txt": "Undone"
+            },
+            {
+                "img": "2015/07/2015-07-23-tickets-for-two.jpg",
+                "txt": "Tickets for Two"
+            },
+            {
+                "img": "2015/07/2015-07-30-trophy-hunting.jpg",
+                "txt": "Trophy Hunting"
+            },
+            {
+                "img": "2015/08/2015-08-06-buzzkill.jpg",
+                "txt": "Buzzkill"
+            },
+            {
+                "img": "2015/08/2015-08-13-stuffed-up.jpg",
+                "txt": "Stuffed Up"
+            },
+            {
+                "img": "2015/08/2015-08-27-back-from-japan.jpg",
+                "txt": "Back From Japan"
+            },
+            {
+                "img": "2015/09/2015-09-03-wishful-thinking.jpg",
+                "txt": "Wishful Thinking"
+            },
+            {
+                "img": "2015/09/2015-09-10-waste-of-time.jpg",
+                "txt": "Waste of Time"
+            },
+            {
+                "img": "2015/09/2015-09-14-single-player.jpg",
+                "txt": "Single Player"
+            },
+            {
+                "img": "2015/09/2015-09-17-survival-skills.jpg",
+                "txt": "Survival Skills"
+            },
+            {
+                "img": "2015/09/2015-09-21-interesting-game.jpg",
+                "txt": "Interesting Game"
+            },
+            {
+                "img": "2015/09/2015-09-24-lost-my-phone.jpg",
+                "txt": "Lost My Phone"
+            },
+            {
+                "img": "2015/09/2015-09-28-new-vocation.jpg",
+                "txt": "New Vocation"
+            },
+            {
+                "img": "2015/10/2015-10-01-first-glance.jpg",
+                "txt": "First Glance"
+            },
+            {
+                "img": "2015/10/2015-10-05-stream-alerts.jpg",
+                "txt": "Stream Alerts"
+            },
+            {
+                "img": "2015/10/2015-10-08-october.jpg",
+                "txt": "October"
+            },
+            {
+                "img": "2015/10/2015-10-12-i-am-brave.jpg",
+                "txt": "I Am Brave"
+            },
+            {
+                "img": "2015/10/2015-10-15-ready-to-haunt.jpg",
+                "txt": "Ready To Haunt"
+            },
+            {
+                "img": "2015/10/2015-10-19-ready-to-play.jpg",
+                "txt": "Ready To Play"
+            },
+            {
+                "img": "2015/10/2015-10-22-face-your-fear.jpg",
+                "txt": "Face Your Fear"
+            },
+            {
+                "img": "2015/10/2015-10-26-standards.jpg",
+                "txt": "Standards"
+            },
+            {
+                "img": "2015/10/2015-10-29-halloween-pizza.jpg",
+                "txt": "Halloween Pizza"
+            },
+            {
+                "img": "2015/11/2015-11-02-so-proud.jpg",
+                "txt": "So Proud"
+            },
+            {
+                "img": "2015/11/2015-11-05-laws-and-found.jpg",
+                "txt": "Laws And Found"
+            },
+            {
+                "img": "2015/11/2015-11-09-never-aliens.jpg",
+                "txt": "Never Aliens"
+            },
+            {
+                "img": "2015/11/2015-11-15-natural-cruelty.jpg",
+                "txt": "Natural Cruelty"
+            },
+            {
+                "img": "2015/11/2015-11-19-silver-lining.jpg",
+                "txt": "Silver Lining"
+            },
+            {
+                "img": "2015/11/2015-11-26-present.jpg",
+                "txt": "Present"
+            },
+            {
+                "img": "2015/12/2015-12-03-anty-establishment.jpg",
+                "txt": "Anty Establishment"
+            },
+            {
+                "img": "2015/12/2015-12-10-everything-to-lose.jpg",
+                "txt": "Everything To Lose"
+            },
+            {
+                "img": "2015/12/2015-12-17-another-lonely-christmas.jpg",
+                "txt": "Another Lonely Christmas"
+            },
+            {
+                "img": "2015/12/2015-12-24-i-want-nothing.jpg",
+                "txt": "I Want Nothing"
+            },
+            {
+                "img": "2016/01/2016-01-07-boom.jpg",
+                "txt": "Boom"
+            },
+            {
+                "img": "2016/01/2016-01-14-criminal-spotted.jpg",
+                "txt": "Criminal Spotted"
+            },
+            {
+                "img": "2016/01/2016-01-21-emergency-service.jpg",
+                "txt": "Emergency Service"
+            },
+            {
+                "img": "2016/01/2016-01-28-down-to-business.jpg",
+                "txt": "Down To Business"
+            },
+            {
+                "img": "2016/02/2016-02-04-jackpot.jpg",
+                "txt": "Jackpot"
+            },
+            {
+                "img": "2016/02/2016-02-11-score.jpg",
+                "txt": "Score!"
+            },
+            {
+                "img": "2016/02/2016-02-18-spray-and-slay.jpg",
+                "txt": "Spray and Slay"
+            },
+            {
+                "img": "2016/02/2016-02-25-game-over.jpg",
+                "txt": "Game Over"
+            },
+            {
+                "img": "2016/12/2016-02-28-when-it-rains.jpg",
+                "txt": "When it rains"
+            },
+            {
+                "img": "2016/03/2016-03-03-no-response.jpg",
+                "txt": "No Response"
+            },
+            {
+                "img": "2016/03/2016-03-10-measure-twice-hug-once.jpg",
+                "txt": "Measure Twice, Hug Once"
+            },
+            {
+                "img": "2016/03/2016-03-17-analyze-and-assess-1.jpg",
+                "txt": "Analyze and Assess"
+            },
+            {
+                "img": "2016/12/2016-03-20-float-on.jpg",
+                "txt": "Float On"
+            },
+            {
+                "img": "2016/03/2016-03-24-birthday-wish.jpg",
+                "txt": "Birthday Wish"
+            },
+            {
+                "img": "2016/03/2016-03-31-by-my-side.jpg",
+                "txt": "By My Side"
+            },
+            {
+                "img": "2016/04/2016-04-07-heartbroken.jpg",
+                "txt": "Heartbroken"
+            },
+            {
+                "img": "2016/04/2016-04-14-snapped.jpg",
+                "txt": "Snapped"
+            },
+            {
+                "img": "2016/04/2016-04-21-let-me-sin.jpg",
+                "txt": "Let Me Sin"
+            },
+            {
+                "img": "2016/04/2016-04-28-punstoppable-punishment.jpg",
+                "txt": "Punstoppable Punishment"
+            },
+            {
+                "img": "2016/05/2016-05-05-dirty-secret.jpg",
+                "txt": "Dirty Secret"
+            },
+            {
+                "img": "2016/05/2016-05-12-timeless-technology.jpg",
+                "txt": "Timeless Technology"
+            },
+            {
+                "img": "2016/05/2016-05-19-exactly-the-same.gif",
+                "txt": "Exactly The Same"
+            },
+            {
+                "img": "2016/05/2016-05-26-taking-a-dive.jpg",
+                "txt": "Taking a Dive"
+            },
+            {
+                "img": "2016/06/2016-06-02-love-out-loud.jpg",
+                "txt": "Love Out Loud"
+            },
+            {
+                "img": "2016/06/2016-06-09-seeking-piece.jpg",
+                "txt": "Seeking Piece"
+            },
+            {
+                "img": "2016/06/2016-06-16-natural-beauties.gif",
+                "txt": "Natural Beauties"
+            },
+            {
+                "img": "2016/06/2016-06-23-life-of-the-party.jpg",
+                "txt": "Life of the Party"
+            },
+            {
+                "img": "2016/07/2016-06-30-fulfilling-birthday.jpg",
+                "txt": "Fulfilling Birthday"
+            },
+            {
+                "img": "2016/07/2016-07-07-lone-appetit.jpg",
+                "txt": "Lone Appetit"
+            },
+            {
+                "img": "2016/07/2016-07-14-rest-assured.jpg",
+                "txt": "Rest Assured"
+            },
+            {
+                "img": "2016/07/2016-07-21-taking-turns.jpg",
+                "txt": "Taking Turns"
+            },
+            {
+                "img": "2016/07/2016-07-28-free-hugs.jpg",
+                "txt": "FREE HUGS"
+            },
+            {
+                "img": "2016/08/2016-08-04-match-made-in-heaven.jpg",
+                "txt": "Match Made in Heaven"
+            },
+            {
+                "img": "2016/08/2016-08-11-gesundheit.jpg",
+                "txt": "Gesundheit"
+            },
+            {
+                "img": "2016/08/2016-08-18-dream-to-stream-1.jpg",
+                "txt": "Dream to Stream #1"
+            },
+            {
+                "img": "2016/08/2016-08-25-dream-to-stream-2.jpg",
+                "txt": "Dream to Stream #2"
+            },
+            {
+                "img": "2016/09/2016-09-01-dream-to-stream-3.jpg",
+                "txt": "Dream to Stream #3"
+            },
+            {
+                "img": "2016/09/2016-09-08-dream-to-stream-4.jpg",
+                "txt": "Dream to Stream #4"
+            },
+            {
+                "img": "2016/09/2016-09-15-chip-on-your-shoulder.jpg",
+                "txt": "Chip on your Shoulder"
+            },
+            {
+                "img": "2016/09/2016-09-22-nobodys-problem.jpg",
+                "txt": "Nobody\u2019s Problem"
+            },
+            {
+                "img": "2016/09/2016-09-29-love-cant-wait.jpg",
+                "txt": "Love Can\u2019t Wait"
+            },
+            {
+                "img": "2016/10/2016-10-06-time-and-plays.jpg",
+                "txt": "Time and Plays"
+            },
+            {
+                "img": "2016/10/2016-10-13-fish-outta-water.jpg",
+                "txt": "Fish Outta Water"
+            },
+            {
+                "img": "2016/10/2016-10-20-rise-and-dine.jpg",
+                "txt": "Rise and Dine"
+            },
+            {
+                "img": "2016/10/2016-10-27-purrtergeist.jpg",
+                "txt": "Purrtergeist"
+            },
+            {
+                "img": "2016/11/2016-11-03-shooting-star.jpg",
+                "txt": "Shooting Star"
+            },
+            {
+                "img": "2016/12/2016-11-09-masked.jpg",
+                "txt": "Masked"
+            },
+            {
+                "img": "2016/11/2016-11-10-friendly-feedback.jpg",
+                "txt": "Friendly Feedback"
+            },
+            {
+                "img": "2016/11/2016-11-17-imagination.jpg",
+                "txt": "Imagination"
+            },
+            {
+                "img": "2016/11/2016-11-24-worn-out.jpg",
+                "txt": "Worn Out"
+            },
+            {
+                "img": "2016/12/2016-12-01-popular-crowd.jpg",
+                "txt": "Popular Crowd"
+            },
+            {
+                "img": "2016/12/2016-12-08-makes-scents.jpg",
+                "txt": "Makes Scents"
+            },
+            {
+                "img": "2016/12/2016-12-15-a-gifted-man.jpg",
+                "txt": "A Gifted Man"
+            },
+            {
+                "img": "2016/12/2016-12-22-hopelessly-gifted.jpg",
+                "txt": "Hopelessly Gifted"
+            },
+            {
+                "img": "2017/01/2017-01-05-happy-note-year.jpg",
+                "txt": "Happy Note Year"
+            },
+            {
+                "img": "2017/01/2017-01-12-mentally-prepared.jpg",
+                "txt": "Mentally Prepared"
+            },
+            {
+                "img": "2017/01/2017-01-19-temperature-temperament.jpg",
+                "txt": "Temperature Temperament"
+            },
+            {
+                "img": "2017/01/2017-01-26-regretful-recollection-1.jpg",
+                "txt": "Regretful Recollection"
+            },
+            {
+                "img": "2017/02/2017-02-02-slice-of-life-1.jpg",
+                "txt": "Slice of Life"
+            },
+            {
+                "img": "2017/02/2017-02-09-hairy-situation.jpg",
+                "txt": "Hairy Situation"
+            },
+            {
+                "img": "2017/02/2017-02-16-flying-solo.jpg",
+                "txt": "Flying Solo"
+            },
+            {
+                "img": "2017/02/2017-02-23-scrambled-plans.png",
+                "txt": "Scrambled Plans"
+            },
+            {
+                "img": "2017/03/2017-03-02-on-the-run.jpg",
+                "txt": "On the Run"
+            },
+            {
+                "img": "2017/03/2017-03-09-kindred-spirit.jpg",
+                "txt": "Kindred Spirit"
+            },
+            {
+                "img": "2017/03/2017-03-16-bad-side-of-town.jpg",
+                "txt": "Bad Side of Town"
+            },
+            {
+                "img": "2017/03/2017-03-23-not-today.jpg",
+                "txt": "Not Today"
+            },
+            {
+                "img": "2017/03/2017-03-30-burned.gif",
+                "txt": "Burned"
+            },
+            {
+                "img": "2017/04/2017-04-06-empty-inside.jpg",
+                "txt": "Empty Inside"
+            },
+            {
+                "img": "2017/04/2017-04-13-happy.jpg",
+                "txt": "Happy"
+            },
+            {
+                "img": "2017/04/2017-04-20-office-purrsonnel.jpg",
+                "txt": "Office Purrsonnel"
+            },
+            {
+                "img": "2017/04/2017-04-27-the-question.jpg",
+                "txt": "The Question"
+            },
+            {
+                "img": "2017/05/2017-05-04-crack-the-case-1.jpg",
+                "txt": "Crack the Case"
+            },
+            {
+                "img": "2017/05/2017-05-11-winging-it.jpg",
+                "txt": "Winging It"
+            },
+            {
+                "img": "2017/05/2017-05-25-hardware-and-tear.jpg",
+                "txt": "Hardware and Tear"
+            },
+            {
+                "img": "2017/06/2017-06-01-tuned-in.jpg",
+                "txt": "Tuned In"
+            },
+            {
+                "img": "2017/06/2017-06-08-sharing-a-moment.jpg",
+                "txt": "Sharing a Moment"
+            },
+            {
+                "img": "2017/06/2017-06-15-once-upon-your-time.jpg",
+                "txt": "Once Upon Your Time"
+            },
+            {
+                "img": "2017/06/2017-06-22-happy-botday.jpg",
+                "txt": "Happy Botday"
+            },
+            {
+                "img": "2017/06/2017-06-29-fed-up.jpg",
+                "txt": "Fed Up"
+            },
+            {
+                "img": "2017/07/2017-07-06-quality-control.jpg",
+                "txt": "Quality Control"
+            },
+            {
+                "img": "2017/07/2017-07-13-at-your-service.jpg",
+                "txt": "At Your Service"
+            },
+            {
+                "img": "2017/07/2017-07-20-driven-mad.jpg",
+                "txt": "Driven Mad"
+            },
+            {
+                "img": "2017/07/2017-07-27-hanging-out.jpg",
+                "txt": "Hanging Out"
+            },
+            {
+                "img": "2017/08/2017-08-03-age-defying.jpg",
+                "txt": "Age Defying"
+            },
+            {
+                "img": "2017/08/2017-08-10-a-rats-tale-1.jpg",
+                "txt": "A Rat\u2019s Tale"
+            },
+            {
+                "img": "2017/08/2017-08-17-being-yourself.jpg",
+                "txt": "Being Yourself"
+            },
+            {
+                "img": "2017/08/2017-08-24-the-art-of-seduction.jpg",
+                "txt": "The Art of Seduction"
+            },
+            {
+                "img": "2017/09/2017-08-31-store-policey.jpg",
+                "txt": "Store Policey"
+            },
+            {
+                "img": "2017/09/2017-09-07-breaking-news.jpg",
+                "txt": "BREAKING NEWS"
+            },
+            {
+                "img": "2017/09/2017-09-14-treasured.jpg",
+                "txt": "Treasured"
+            },
+            {
+                "img": "2017/09/2017-09-21-raising-the-bar.jpg",
+                "txt": "Raising the Bar"
+            },
+            {
+                "img": "2017/09/2017-09-28-the-ugly-pluckling.jpg",
+                "txt": "The Ugly Pluckling"
+            },
+            {
+                "img": "2017/10/2017-10-05-dead-end.jpg",
+                "txt": "Dead End"
+            },
+            {
+                "img": "2017/10/2017-10-12-hella-early.jpg",
+                "txt": "Hella Early"
+            },
+            {
+                "img": "2017/10/2017-10-19-dressed-in-peace.jpg",
+                "txt": "Dressed in Peace"
+            },
+            {
+                "img": "2017/10/2017-10-26-scared-stiff.jpg",
+                "txt": "Scared Stiff"
+            },
+            {
+                "img": "2017/11/2017-11-02-puppy-love-1.jpg",
+                "txt": "Puppy Love"
+            },
+            {
+                "img": "2017/11/2017-11-09-hook-line-and-thinker.jpg",
+                "txt": "Hook, Line, and Thinker"
+            },
+            {
+                "img": "2017/11/2017-11-16-self-reflection.jpg",
+                "txt": "Self-Reflection"
+            },
+            {
+                "img": "2017/11/2017-11-23-crime-pays.jpg",
+                "txt": "Crime Pays"
+            },
+            {
+                "img": "2017/12/2017-11-30-scientific-purrgress.jpg",
+                "txt": "Scientific Purrgress"
+            },
+            {
+                "img": "2017/12/2017-12-07-lightheaded.jpg",
+                "txt": "Lightheaded"
+            },
+            {
+                "img": "2017/12/2017-12-14-naughty-boy.jpg",
+                "txt": "Naughty Boy"
+            },
+            {
+                "img": "2017/12/2017-12-21-torn-apart.jpg",
+                "txt": "Torn Apart"
+            },
+            {
+                "img": "2018/01/2018-01-11-wealth-of-knowledge.jpg",
+                "txt": "Wealth of Knowledge"
+            },
+            {
+                "img": "2018/01/2018-01-18-sneak-peek.jpg",
+                "txt": "Sneak Peek"
+            },
+            {
+                "img": "2018/01/2018-01-25-misplace-your-pets.jpg",
+                "txt": "Misplace Your Pets"
+            },
+            {
+                "img": "2018/02/2018-02-01-love-at-first-sit.jpg",
+                "txt": "Love at First Sit"
+            },
+            {
+                "img": "2018/02/2018-02-08-opening-up.jpg",
+                "txt": "Opening Up"
+            },
+            {
+                "img": "2018/02/2018-02-15-pillow-talk.jpg",
+                "txt": "Pillow Talk"
+            },
+            {
+                "img": "2018/02/2018-02-22-launch-time.jpg",
+                "txt": "Launch Time"
+            },
+            {
+                "img": "2018/02/2018-03-01-fishing-for-help.jpg",
+                "txt": "Fishing for Help"
+            },
+            {
+                "img": "2018/02/2018-03-08-lifes-a-beach.jpg",
+                "txt": "Life\u2019s a Beach"
+            },
+            {
+                "img": "2018/03/2018-03-15-shifting-gears.jpg",
+                "txt": "Shifting Gears"
+            },
+            {
+                "img": "2018/03/2018-03-22-party-up.jpg",
+                "txt": "Party Up"
+            },
+            {
+                "img": "2018/03/2018-03-29-honk-honk.jpg",
+                "txt": "HONK HONK"
+            },
+            {
+                "img": "2018/04/2018-04-05-moonarchy.jpg",
+                "txt": "Moonarchy"
+            },
+            {
+                "img": "2018/04/2018-04-12-repost.jpg",
+                "txt": "Repost"
+            },
+            {
+                "img": "2018/04/2018-04-19-cat-got-your-tongue.jpg",
+                "txt": "Cat got your Tongue"
+            },
+            {
+                "img": "2018/04/2018-04-26-the-meal-so-nice.jpg",
+                "txt": "The Meal so Nice"
+            },
+            {
+                "img": "2018/05/2018-05-03-furget-me-not-1.jpg",
+                "txt": "Furget Me Not"
+            },
+            {
+                "img": "2018/05/2018-05-10-the-all-saying-eye.jpg",
+                "txt": "The All-Saying Eye"
+            },
+            {
+                "img": "2018/05/2018-05-17-orderly-coo.jpg",
+                "txt": "Orderly Coo"
+            },
+            {
+                "img": "2018/05/2018-05-24-rules-suck.jpg",
+                "txt": "Rules Suck"
+            },
+            {
+                "img": "2018/05/2018-05-31-all-work-and-no-play.jpg",
+                "txt": "All Work and No Play"
+            },
+            {
+                "img": "2018/06/2018-06-07-windburn.jpg",
+                "txt": "Windburn"
+            },
+            {
+                "img": "2018/06/2018-06-14-road-awakening.jpg",
+                "txt": "Road Awakening"
+            },
+            {
+                "img": "2018/06/2018-06-21-partying-gift.jpg",
+                "txt": "Partying Gift"
+            },
+            {
+                "img": "2018/06/2018-06-28-full-bodied-coffee.jpg",
+                "txt": "Full Bodied Coffee"
+            },
+            {
+                "img": "2018/07/2018-07-05-cats-and-dots.jpg",
+                "txt": "Cats and Dots"
+            },
+            {
+                "img": "2018/07/2018-07-12-dirty-business.jpg",
+                "txt": "Dirty Business"
+            },
+            {
+                "img": "2018/07/2018-07-19-red-alert.gif",
+                "txt": "Red Alert"
+            },
+            {
+                "img": "2018/07/2018-07-26-taking-out-the-trash.jpg",
+                "txt": "Taking Out the Trash"
+            },
+            {
+                "img": "2018/08/2018-08-02-a-growing-problem.jpg",
+                "txt": "A Growing Problem"
+            },
+            {
+                "img": "2018/08/2018-08-09-in-my-room-1.jpg",
+                "txt": "In My Room"
+            },
+            {
+                "img": "2018/08/2018-08-16-didnt-see-that-coming.jpg",
+                "txt": "Didn\u2019t See That Coming"
+            },
+            {
+                "img": "2018/08/2018-08-23-baggage.jpg",
+                "txt": "Baggage"
+            },
+            {
+                "img": "2018/08/2018-08-30-wade-and-sea.jpg",
+                "txt": "Wade and Sea"
+            },
+            {
+                "img": "2018/09/2018-09-06-fresh-start.jpg",
+                "txt": "Fresh Start"
+            },
+            {
+                "img": "2018/09/2018-09-13-soothesayer.jpg",
+                "txt": "Soothesayer"
+            },
+            {
+                "img": "2018/09/2018-09-20-lost-and-frowned.jpg",
+                "txt": "Lost and Frowned"
+            },
+            {
+                "img": "2018/09/2018-09-27-special-species.jpg",
+                "txt": "Special Species"
+            },
+            {
+                "img": "2018/10/2018-10-04-haunted-oust.jpg",
+                "txt": "Haunted Oust"
+            },
+            {
+                "img": "2018/10/2018-10-11-before-and-afterlife.jpg",
+                "txt": "Before and Afterlife"
+            },
+            {
+                "img": "2018/10/2018-10-18-dead-already.jpg",
+                "txt": "Dead Already"
+            },
+            {
+                "img": "2018/10/2018-10-25-halloween-time-1.jpg",
+                "txt": "Halloween Time"
+            },
+            {
+                "img": "2018/11/2018-11-01-out-of-the-bag.jpg",
+                "txt": "Out of the Bag"
+            },
+            {
+                "img": "2018/11/2018-11-08-powering-through.jpg",
+                "txt": "Powering Through"
+            },
+            {
+                "img": "2018/11/2018-11-15-customer-support.jpg",
+                "txt": "Customer Support"
+            },
+            {
+                "img": "2018/11/2018-11-19-thank-you-patrons-2.jpg",
+                "txt": "Thank You Patrons"
+            },
+            {
+                "img": "2018/11/2018-11-22-morbirdly-obese.jpg",
+                "txt": "Morbirdly Obese"
+            },
+            {
+                "img": "2018/11/2018-11-29-wasted-opportunity.jpg",
+                "txt": "Wasted Opportunity"
+            },
+            {
+                "img": "2018/12/2018-12-06-go-with-the-flow.jpg",
+                "txt": "Go with the Flow"
+            },
+            {
+                "img": "2018/12/2018-12-13-christmas-miracle.jpg",
+                "txt": "Christmas Miracle"
+            },
+            {
+                "img": "2018/12/2018-12-20-gift-bearer.jpg",
+                "txt": "Gift Bearer"
+            },
+            {
+                "img": "2018/12/2018-12-27-abdominal-snowman.jpg",
+                "txt": "Abdominal Snowman"
+            },
+            {
+                "img": "2019/01/2019-01-10-ha-ha-happy-new-year.jpg",
+                "txt": "Ha Ha Happy New Year"
+            },
+            {
+                "img": "2019/01/2019-01-17-copy-and-waste.jpg",
+                "txt": "Copy and Waste"
+            },
+            {
+                "img": "2019/01/2019-01-24-no-place-like-hell.jpg",
+                "txt": "No Place Like Hell"
+            },
+            {
+                "img": "2019/01/2019-01-30-the-wave.jpg",
+                "txt": "The Wave"
+            },
+            {
+                "img": "2019/02/2019-01-31-tall-order.jpg",
+                "txt": "Tall Order"
+            },
+            {
+                "img": "2019/02/2019-02-07-business-is-blooming.jpg",
+                "txt": "Business is Blooming"
+            },
+            {
+                "img": "2019/02/2019-02-14-labour-of-love.jpg",
+                "txt": "Labour of Love"
+            },
+            {
+                "img": "2019/02/2019-02-21-cut-your-losses.jpg",
+                "txt": "Cut Your Losses"
+            },
+            {
+                "img": "2019/02/2019-02-28-going-tibia-problem2.jpg",
+                "txt": "Going Tibia Problem"
+            },
+            {
+                "img": "2019/03/2019-03-07-minimalism.jpg",
+                "txt": "Minimalism"
+            },
+            {
+                "img": "2019/03/2019-03-14-feeling-peckish.jpg",
+                "txt": "Feeling Peckish"
+            },
+            {
+                "img": "2019/03/2019-03-21-silent-treatment.jpg",
+                "txt": "Silent Treatment"
+            },
+            {
+                "img": "2019/03/2019-03-28-throwing-it-out-there.jpg",
+                "txt": "Throwing It Out There"
+            },
+            {
+                "img": "2019/04/2019-04-04-trouble-brewing.jpg",
+                "txt": "Trouble Brewing"
+            },
+            {
+                "img": "2019/04/2019-04-12-minor-inconvenience.jpg",
+                "txt": "Minor Inconvenience"
+            },
+            {
+                "img": "2019/04/2019-04-18-worth-a-shot.jpg",
+                "txt": "Worth a Shot"
+            },
+            {
+                "img": "2019/05/2019-05-02-looking-out.jpg",
+                "txt": "Looking Out"
+            },
+            {
+                "img": "2019/05/2019-05-24-wake-up.jpg",
+                "txt": "Wake Up"
+            },
+            {
+                "img": "2019/05/2019-05-30-exhale.jpg",
+                "txt": "Exhale"
+            },
+            {
+                "img": "2019/06/2019-06-20-bin-there-dump-that.jpg",
+                "txt": "Bin There, Dump That"
+            },
+            {
+                "img": "2019/06/2019-06-27-cake-it-or-leave-it.jpg",
+                "txt": "Cake it or Leave it"
+            },
+            {
+                "img": "2019/07/2019-07-04-cease-hand-desist.jpg",
+                "txt": "Cease Hand Desist"
+            },
+            {
+                "img": "2019/07/2019-07-11-code-be-better.jpg",
+                "txt": "Code Be Better"
+            },
+            {
+                "img": "2019/07/2019-07-18-bottoms-up-1.jpg",
+                "txt": "Bottoms Up"
+            },
+            {
+                "img": "2019/07/2019-07-25-impactful-wish.jpg",
+                "txt": "Impactful Wish"
+            },
+            {
+                "img": "2019/08/2019-08-01-burst-your-bubble.jpg",
+                "txt": "Burst Your Bubble"
+            },
+            {
+                "img": "2019/08/2019-08-08-tuna-round.jpg",
+                "txt": "Tuna Round"
+            },
+            {
+                "img": "2019/08/2019-08-16-hot-steaming-pizza.jpg",
+                "txt": "Hot Steaming Pizza"
+            },
+            {
+                "img": "2019/08/2019-08-22-technically-the-tooth.jpg",
+                "txt": "Technically the Tooth"
+            },
+            {
+                "img": "2019/08/2019-08-29-change-of-planet.jpg",
+                "txt": "Change of Planet"
+            },
+            {
+                "img": "2019/09/2019-09-05-money-where-your-mouth-is.jpg",
+                "txt": "Money where your Mouth is"
+            },
+            {
+                "img": "2019/09/2019-09-12-is-zit-visible.jpg",
+                "txt": "Is Zit Visible?"
+            },
+            {
+                "img": "2019/09/2019-09-19-like-father-like-son.jpg",
+                "txt": "Like Father, Like Son"
+            },
+            {
+                "img": "2019/09/2019-09-26-spaced-out-1.jpg",
+                "txt": "Spaced Out"
+            },
+            {
+                "img": "2019/10/2019-10-03-dampened-spirit.jpg",
+                "txt": "Dampened Spirit"
+            },
+            {
+                "img": "2019/10/2019-10-12-no-rest-for-the-wilted.jpg",
+                "txt": "No Rest for the Wilted"
+            },
+            {
+                "img": "2019/10/2019-10-17-minor-haunting.jpg",
+                "txt": "Minor Haunting"
+            },
+            {
+                "img": "2019/10/2019-10-24-broom-broom.jpg",
+                "txt": "Broom Broom"
+            },
+            {
+                "img": "2019/11/2019-10-31-booginner.jpg",
+                "txt": "Booginner"
+            },
+            {
+                "img": "2019/11/2019-11-19-thank-you-patrons-2019.jpg",
+                "txt": "Thank You Patrons 2019"
+            },
+            {
+                "img": "2019/11/2019-11-21-fishful-thinking.jpg",
+                "txt": "Fishful Thinking"
+            },
+            {
+                "img": "2019/11/2019-11-28-wingman.jpg",
+                "txt": "Wingman"
+            },
+            {
+                "img": "2019/12/2019-12-05-goodbye.jpg",
+                "txt": "Goodbye"
+            },
+            {
+                "img": "2019/12/2019-12-12-the-more-the-merrier.jpg",
+                "txt": "The More the Merrier"
+            },
+            {
+                "img": "2019/12/2019-12-20-naughty-or-nice.jpg",
+                "txt": "Naughty or Nice"
+            },
+            {
+                "img": "2020/01/2020-01-16-take-the-shot.jpg",
+                "txt": "Take the Shot"
+            },
+            {
+                "img": "2020/01/2020-01-23-connection-error.jpg",
+                "txt": "Connection Error"
+            },
+            {
+                "img": "2020/01/2020-01-30-dial-and-error.jpg",
+                "txt": "Dial and Error"
+            },
+            {
+                "img": "2020/02/2020-02-06-made-for-each-other.jpg",
+                "txt": "Made for Each Other"
+            },
+            {
+                "img": "2020/02/2020-02-13-tuned-out.jpg",
+                "txt": "Tuned Out"
+            },
+            {
+                "img": "2020/02/2020-02-20-forever-abone.jpg",
+                "txt": "Forever Abone"
+            },
+            {
+                "img": "2020/02/2020-02-27-refined-taste.jpg",
+                "txt": "Refined Taste"
+            },
+            {
+                "img": "2020/03/2020-03-05-pspspsps.jpg",
+                "txt": "pspspsps"
+            },
+            {
+                "img": "2020/03/2020-03-12-last-one-left.jpg",
+                "txt": "Last One Left"
+            },
+            {
+                "img": "2020/03/2020-03-19-drawn-to-conclusions.jpg",
+                "txt": "Drawn to Conclusions"
+            },
+            {
+                "img": "2020/03/2020-03-26-saving-the-world.jpg",
+                "txt": "Saving the World"
+            },
+            {
+                "img": "2020/04/2020-04-02-growing-appreciation.jpg",
+                "txt": "Growing Appreciation"
+            },
+            {
+                "img": "2020/04/2020-04-09-hatching-a-plan.jpg",
+                "txt": "Hatching a Plan"
+            },
+            {
+                "img": "2020/04/2020-04-16-soaks-to-be-you.jpg",
+                "txt": "Soaks to be You"
+            },
+            {
+                "img": "2020/04/2020-04-23-hung-up.jpg",
+                "txt": "Hung Up"
+            },
+            {
+                "img": "2020/05/2020-04-30-crying-my-best.jpg",
+                "txt": "Crying my Best"
+            },
+            {
+                "img": "2020/05/2020-05-07-stuck-up.jpg",
+                "txt": "Stuck Up"
+            },
+            {
+                "img": "2020/05/2020-05-14-emailing-it-in.jpg",
+                "txt": "Emailing it in"
+            },
+            {
+                "img": "2020/05/2020-05-19-light-my-way.jpg",
+                "txt": "Light My Way"
+            },
+            {
+                "img": "2020/05/2020-05-21-in-deep-trouble.jpg",
+                "txt": "In Deep Trouble"
+            },
+            {
+                "img": "2020/05/2020-05-28-cool-move.jpg",
+                "txt": "Cool Move"
+            },
+            {
+                "img": "2020/06/2020-06-11-pick-your-poison.jpg",
+                "txt": "Pick your Poison"
+            },
+            {
+                "img": "2020/06/2020-06-18-hit-on-and-run.jpg",
+                "txt": "Hit On and Run"
+            },
+            {
+                "img": "2020/06/2020-06-26-many-happy-returns.jpg",
+                "txt": "Many Happy Returns"
+            },
+            {
+                "img": "2020/07/2020-07-02-post-haste.jpg",
+                "txt": "Post Haste"
+            },
+            {
+                "img": "2020/08/2020-08-01-pressing-matters.jpg",
+                "txt": "Pressing Matters"
+            },
+            {
+                "img": "2020/08/2020-08-07-cheap-cheap.jpg",
+                "txt": "Cheap Cheap"
+            },
+            {
+                "img": "2020/08/2020-08-14-over-the-moon.jpg",
+                "txt": "Over the Moon"
+            },
+            {
+                "img": "2020/08/2020-08-21-gotta-be-kitten-me.jpg",
+                "txt": "Gotta Be Kitten Me"
+            },
+            {
+                "img": "2020/08/2020-08-28-taking-your-time.jpg",
+                "txt": "Taking Your Time"
+            },
+            {
+                "img": "2020/09/2020-09-04-pick-up.jpg",
+                "txt": "Pick Up"
+            },
+            {
+                "img": "2020/09/2020-09-11-called-out.jpg",
+                "txt": "Called Out"
+            },
+            {
+                "img": "2020/09/2020-09-18-grabbing-a-bite.jpg",
+                "txt": "Grabbing a Bite"
+            },
+            {
+                "img": "2020/09/2020-09-25-off-the-menu.jpg",
+                "txt": "Off the Menu"
+            },
+            {
+                "img": "2020/10/2020-10-02-busted.jpg",
+                "txt": "Busted"
+            }
+        ]
+    },
     "martin-perscheid.de": {
         "filenames": [
             "3035.gif",
