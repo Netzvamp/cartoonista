@@ -36,7 +36,7 @@ def nl_scraper():
 
             return filenames
     else:
-        raise Exception("Couldn't grab nichtlustig.de filenames: Script tag doesn't contain 'cartoonList'.")
+        raise CartoonError("Couldn't grab nichtlustig.de filenames: Script tag doesn't contain 'cartoonList'.")
 
 
 if __name__ != "__main__":
