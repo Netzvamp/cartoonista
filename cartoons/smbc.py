@@ -42,7 +42,7 @@ def commitstrip_scraper():
             nextpage = nextpage["href"]
         else:  # we reached the last page
             break
-    return nextpage
+    return filenames
 
 
 if __name__ != "__main__":
@@ -51,7 +51,7 @@ if __name__ != "__main__":
         credits="Zach Weinersmith",
         website="https://www.smbc-comics.com",
         language="en",
-        base_url="https://www.commitstrip.com/wp-content/uploads/",
+        base_url="https://www.smbc-comics.com/comics/",
         scraper=commitstrip_scraper
     )
 else:

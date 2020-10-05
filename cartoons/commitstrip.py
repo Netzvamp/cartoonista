@@ -36,16 +36,13 @@ def commitstrip_scraper():
 
             filenames.append({"img": img_src, "txt": title})
             logger.info("Added https://www.commitstrip.com/wp-content/uploads/" + img_src + " Text: " + title)
-        else:
-            continue  # some page don't have n image
-            # raise CartoonError("loadingartist.com: Couldn't find cartoon on page: " + nextpage)
 
         nextpage = soup.select_one(".nav-next a")
         if nextpage:
             nextpage = nextpage["href"]
         else:  # we reached the last page
             break
-    return nextpage
+    return filenames
 
 
 if __name__ != "__main__":
