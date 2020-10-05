@@ -46,6 +46,11 @@ class GetHandler(BaseHTTPRequestHandler):
                     txt=cartoon.get("txt", "")
                 )
                 self.wfile.write(html.encode('utf-8'))
+        elif self.path == "/cartoon.css":
+            with open("cartoon.css") as f:
+                self.send_response(200)
+                self.end_headers()
+                self.wfile.write(f.read().encode('utf-8'))
         else:
             self.send_error(404, message="Not found")
 
