@@ -17,7 +17,7 @@ setuptools.setup(
     version=__version__,
     author="Robert Lieback",
     author_email="robertlieback@zetabyte.de",
-    description="A library to get a random cartoon image url from 11000+ cartoons. "
+    description="A library to get a random cartoon image url from ~20000 cartoons. "
                 "It also contains the scrapers for many cartoon websites.",
     long_description=long_description,
     long_description_content_type="text/markdown",

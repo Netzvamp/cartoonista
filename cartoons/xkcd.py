@@ -1,6 +1,6 @@
 import logging
-from .exceptions import CartoonError
 if __name__ != "__main__":
+    from .exceptions import CartoonError
     from .cartoonist import Cartoonist
 
 

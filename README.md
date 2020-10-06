@@ -1,6 +1,6 @@
 # Cartoonista - A python cartoon library
 
-A library to get a random cartoon image url from 11000+ cartoons. 
+A library to get a random cartoon image url from ~20000 cartoons. 
 It also contains the scrapers for many cartoon websites.
 
 :tada: :satisfied: :man_facepalming: **A product of the finest german overengineering to solve a non existing problem with a complicated solution.** :man_facepalming: :satisfied: :tada: 
@@ -10,6 +10,9 @@ It also contains the scrapers for many cartoon websites.
 English:
 * https://xkcd.com
 * https://explosm.net
+* https://loadingartist.com/
+* https://www.smbc-comics.com
+* https://www.commitstrip.com
 
 German:
 * https://joscha.com/nichtlustig
@@ -53,7 +56,7 @@ It returns something like this:
         'tags': []
     }
 
-Title/txt could be placed over/under the image and it would be fair to give credit and link to website.
+*Title/txt could be placed over/under the image and it would be fair to give credit and link to website.*
 
 ## Manual updating
 
