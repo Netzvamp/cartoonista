@@ -43,3 +43,21 @@ a {
 a:hover {
     color: #ff0000;
 }
+
+#show_cartoonista_config{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+#cartoonista_config_window {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    background: lightgray;
+}
