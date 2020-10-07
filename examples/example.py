@@ -3,9 +3,14 @@ from pprint import pprint
 from cartoons import Cartoons
 
 # Get a list of all cartoon cartoonists and there infos
+cartoonists = Cartoons.get_all_cartoonists()
 print("All cartoonists and there infos:")
-pprint(Cartoons.get_all_cartoonists())
-print("Nr of cartoonists:", len(Cartoons.get_all_cartoonists()))
+print(cartoonists)
+print("Nr of cartoonists:", len(cartoonists))
+nr = 0
+for c in cartoonists:
+    nr = nr + c["cartoon_count"]
+print("Nr of cartoons:", nr)
 
 print("Random without filter", Cartoons.get_random_cartoon())
 print("Only ruthe.de or xkcd.com", Cartoons.get_random_cartoon(cartoonists=["xkcd.com", "ruthe.de"]))

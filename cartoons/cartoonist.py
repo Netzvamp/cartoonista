@@ -96,7 +96,8 @@ class Cartoonist:
                     "credits": cls.__objects[obj].credits,
                     "website": cls.__objects[obj].website,
                     "language": cls.__objects[obj].language,
-                    "tags": cls.__objects[obj].tags
+                    "tags": cls.__objects[obj].tags,
+                    "cartoon_count": len(cls.data[cls.__objects[obj].name]["filenames"])
                 }
             )
         return cartoonists
