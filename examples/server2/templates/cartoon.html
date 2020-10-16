@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Cartoonista - ${title}</title>
-    <link rel="stylesheet" type="text/css" href="/cartoon.css">
-    <script src="cartoon.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/cartoon.css">
+    <script src="/static/cartoon.js"></script>
 </head>
 <body>
 <div class="enjoy"><h2>Enjoy your day &#128516;</h2></div>
 <div id="cartoon">
-<div><h1>${title}</h1></div>
-<div><img id="image" src="${img}" alt="{txt}" onclick="cartoonista.resize()"></div>
-<div class="txt">${txt}<a href="${website}">&copy; ${credits}</a></div></div>
+<div><h1>{{title}}</h1></div>
+<div><img id="image" src="{{img}}" alt="{txt}" onclick="cartoonista.resize()"></div>
+<div class="txt">{{txt}} <a href="{{website}}">&copy; {{credits}}</a></div></div>
 <div id="show_cartoonista_config"><a href="#" onclick="cartoonista.open_config()">open config</a></div>
 <div id="cartoonista_config_window">
     <form id="cartoonista_config">
