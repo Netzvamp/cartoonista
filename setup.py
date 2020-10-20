@@ -9,7 +9,7 @@ with open("README.md", "r") as fh:
 # get version from package's __version__
 __version__ = re.search(
         r'__version__\s*=\s*[\'"]([^\'"]*)[\'"]',  # It excludes inline comment too
-        io.open('cartoons/__init__.py', encoding='utf_8_sig').read()
+        io.open('cartoonista/__init__.py', encoding='utf_8_sig').read()
     ).group(1)
 
 setuptools.setup(

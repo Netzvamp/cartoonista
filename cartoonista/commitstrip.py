@@ -18,7 +18,7 @@ def commitstrip_scraper():
         raise CartoonError("Packages for scraping not installed. Install requests and beautifulsoup4. "
                            "This can be done with 'pip install cartoonista[scraping]'")
     nextpage_link = True
-    nextpage = "https://www.smbc-comics.com/comic/2002-09-05"
+    nextpage = "https://www.commitstrip.com/en/2012/02/22/interview/?"
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                       'Brave Chrome/85.0.4183.121 Safari/537.36'
@@ -27,17 +27,19 @@ def commitstrip_scraper():
     while nextpage_link:
         soup = BeautifulSoup(requests.get(nextpage, headers=headers).text, 'html.parser')
 
-        img = soup.select_one("#cc-comicbody img")
+        img = soup.select_one(".entry-content img")
 
-        if img:
-            img_src = img["src"].replace("https://www.smbc-comics.com/comics/", "")
+        if img and "commitstrip.com/wp-content/uploads" in img["src"]:
+            img_src = img["src"].\
+                replace("https://www.commitstrip.com/wp-content/uploads/", "").\
+                replace("//www.commitstrip.com/wp-content/uploads/, """)
 
-            filenames.append({"img": img_src, "txt": img["title"]})
-            logger.info("Added https://www.smbc-comics.com/comics/" + img_src + " Text: " + img["title"])
-        else:
-            raise CartoonError("loadingartist.com: Couldn't find cartoon on page: " + nextpage)
+            title = soup.select_one(".entry-title").text
 
-        nextpage = soup.select_one(".cc-next")
+            filenames.append({"img": img_src, "txt": title})
+            logger.info("Added https://www.commitstrip.com/wp-content/uploads/" + img_src + " Text: " + title)
+
+        nextpage = soup.select_one(".nav-next a")
         if nextpage:
             nextpage = nextpage["href"]
         else:  # we reached the last page
@@ -46,12 +48,12 @@ def commitstrip_scraper():
 
 
 if __name__ != "__main__":
-    smbc_comics = Cartoonist(
-        name="smbc_comics",
-        credits="Zach Weinersmith",
-        website="https://www.smbc-comics.com",
+    commitstrip = Cartoonist(
+        name="CommitStrip_com",
+        credits="CommitStrip.com",
+        website="https://www.commitstrip.com",
         language="en",
-        base_url="https://www.smbc-comics.com/comics/",
+        base_url="https://www.commitstrip.com/wp-content/uploads/",
         scraper=commitstrip_scraper
     )
 else:

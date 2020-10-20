@@ -1,5 +1,5 @@
 import logging
-from cartoons import Cartoons
+from cartoonista import Cartoons
 
 logging.basicConfig(level=logging.INFO)  # without you don't see the progress
 

@@ -33,8 +33,8 @@ def rr_scraper():
 
 if __name__ != "__main__":
     ruthe = Cartoonist(
-        name="ruthe.de",
-        credits="Ralf Ruthe",
+        name="ruthe_de",
+        credits="ruthe.de",
         website="https://ruthe.de",
         language="de",
         base_url="https://ruthe.de/cartoons/strip_",

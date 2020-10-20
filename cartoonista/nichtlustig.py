@@ -41,8 +41,8 @@ def nl_scraper():
 
 if __name__ != "__main__":
     nichtlustig = Cartoonist(
-        name="nichtlustig.de",
-        credits="Joscha Sauer",
+        name="nichtlustig_de",
+        credits="nichtlustig.de",
         website="https://joscha.com/nichtlustig",
         language="de",
         base_url="https://joscha.com/data/media/cartoons/",

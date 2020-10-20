@@ -43,45 +43,71 @@ class Cartoonist:
             pass  # The scraper get some work
 
     @classmethod
-    def get_random_cartoon(cls, cartoonists: list = None, languages: list = None, exclude_tags: list = None, weighted: bool = True):
-        if not languages:
-            languages = ["de", "en"]
-        if not cartoonists:
-            cartoonists = [_art for _art in Cartoonist.data]
-        if not exclude_tags:
-            exclude_tags = []
+    def get_random_cartoon(cls, include: list = None, exclude: list = None, languages: list = None,
+                           exclude_tags: list = None, weighted: bool = True):
+        """
+        :param include:
+        :type include: list
+        :param exclude:
+        :type exclude: list
+        :param languages:
+        :type languages: list
+        :param exclude_tags:
+        :type exclude_tags: list
+        :param weighted:
+        :type weighted: bool
+        :return:
+        :rtype:
 
+        """
         weights = []
         filtered_cartoonists = []
 
-        # Apply filters
-        for _art in Cartoonist.data:
-            if (cartoonists and _art in cartoonists) and \
-                    (languages and cls.__objects[_art].language in languages) and \
-                    not ([i for i in cls.__objects[_art].tags if i in exclude_tags]):
-                if weighted:
-                    weights.append(len(cls.data[_art]["filenames"]))
-                filtered_cartoonists.append(_art)
+        for c in Cartoonist.data:
+            # print("to filter", c)
+            if exclude_tags and isinstance(exclude_tags, list) and cls.__objects[c].tags in exclude_tags:
+                # print("Exclude by tag:", c)
+                continue
+            if exclude and isinstance(exclude, list) and c in exclude:
+                # print("Exclude:", c)
+                continue
+            if include and isinstance(include, list) and c not in include:
+                # print("Is not in include:", c)
+                continue
+            if languages and isinstance(languages, list) and cls.__objects[c].language not in languages:
+                continue
+            # print("Added:", c)
+            filtered_cartoonists.append(c)
+
+        # print("filtered_cartoonists", filtered_cartoonists)
+
+        weights = [len(cls.data[_art]["filenames"]) for _art in filtered_cartoonists]
 
         if len(filtered_cartoonists):
-            if weighted:  # choose cartoonists weighted by the number of cartoons
-                cartoonists = random.choices(filtered_cartoonists, weights=weights)[0]
+            if weighted:  # choose cartoonist weighted by the number of cartoons
+                cartoonist = random.choices(filtered_cartoonists, weights=weights)[0]
             else:
-                cartoonists = random.choices(filtered_cartoonists)[0]
-            img = cls.data[cartoonists]["filenames"][random.randrange(0, len(cls.data[cartoonists]["filenames"]) - 1)]
+                cartoonist = random.choices(filtered_cartoonists)[0]
+
+            img = cls.data[cartoonist]["filenames"][random.randrange(0, len(cls.data[cartoonist]["filenames"]) - 1)]
+
             if isinstance(img, str):
                 return {
-                    "img": cls.__objects[cartoonists].base_url + img,
-                    "credits": cls.__objects[cartoonists].credits,
-                    "website": cls.__objects[cartoonists].website
+                    "name": cartoonist,
+                    "img": cls.__objects[cartoonist].base_url + img,
+                    "language": cls.__objects[cartoonist].language,
+                    "credits": cls.__objects[cartoonist].credits,
+                    "website": cls.__objects[cartoonist].website
                 }
             elif isinstance(img, dict):
-                src = cls.__objects[cartoonists].base_url + img["img"]
+                src = cls.__objects[cartoonist].base_url + img["img"]
                 return {
                     **img,
+                    "name": cartoonist,
                     "img": src,
-                    "credits": cls.__objects[cartoonists].credits,
-                    "website": cls.__objects[cartoonists].website
+                    "language": cls.__objects[cartoonist].language,
+                    "credits": cls.__objects[cartoonist].credits,
+                    "website": cls.__objects[cartoonist].website
                 }
         else:
             raise CartoonError("Oh noes! No cartoonists with that names and criteria found!")

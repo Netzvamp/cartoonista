@@ -23,10 +23,12 @@ def explosm_scraper():
         
         img = soup.select_one("#main-comic")
         if img:
-            img = img["src"].replace("//files.explosm.net/comics/", "")
+            img = img["src"].replace("//files.explosm.net/", "")\
+                .replace("http://files.explosm.net/", "")\
+                .replace("https://files.explosm.net/", "")
             author = soup.select_one("#comic-area #comic-author").text.strip("\n").replace("\n", " ").strip("\n")
             filenames.append({"img": img, "txt": author})
-            logger.info("Added https://files.explosm.net/comics/" + img + " Text: " + author)
+            logger.info("Added https://files.explosm.net/" + img + " Text: " + author)
         if soup.find_all("a", class_="nav-next disabled"):  # detect last page
             break
 
@@ -39,11 +41,11 @@ def explosm_scraper():
 
 if __name__ != "__main__":
     explosm = Cartoonist(
-        name="explosm.net",
-        credits="Explosm, LLC.",
+        name="explosm_net",
+        credits="Explosm.net",
         website="http://explosm.net/",
         language="en",
-        base_url="https://files.explosm.net/comics/",
+        base_url="https://files.explosm.net/",
         scraper=explosm_scraper,
         tags=["offensive", "nsfw"]
     )

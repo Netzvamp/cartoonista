@@ -4,7 +4,7 @@ import webbrowser
 from urllib import parse
 from string import Template
 import json
-from cartoons import Cartoons
+from cartoonista import Cartoons
 
 
 class GetHandler(BaseHTTPRequestHandler):
@@ -59,7 +59,7 @@ class GetHandler(BaseHTTPRequestHandler):
                 self.send_header('Content-Type', 'text/javascript; charset=utf-8')
                 self.end_headers()
                 self.wfile.write(f.read().encode('utf-8'))
-        elif self.path == "/rest/cartoons/cartoonists":
+        elif self.path == "/rest/cartoons/include":
             self.send_response(200)
             self.send_header('Content-Type', 'application/json; charset=utf-8')
             self.end_headers()
