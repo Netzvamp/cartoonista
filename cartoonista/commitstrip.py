@@ -32,7 +32,7 @@ def commitstrip_scraper():
         if img and "commitstrip.com/wp-content/uploads" in img["src"]:
             img_src = img["src"].\
                 replace("https://www.commitstrip.com/wp-content/uploads/", "").\
-                replace("//www.commitstrip.com/wp-content/uploads/, """)
+                replace("//www.commitstrip.com/wp-content/uploads/", "")
 
             title = soup.select_one(".entry-title").text
 

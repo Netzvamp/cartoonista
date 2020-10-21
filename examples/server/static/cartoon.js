@@ -55,10 +55,10 @@ let cartoonista = {
 
             if ('txt' in data) {
                 document.getElementById("cartoonista_txt").innerHTML =
-                    `${data.txt} <a href="${data.website}">&copy; ${data.credits}</a>`;
+                    `${data.txt} <a href="${data.website}" target="_blank">&copy; ${data.credits}</a>`;
             } else {
                 document.getElementById("cartoonista_txt").innerHTML =
-                    `<a href="${data.website}">&copy; ${data.credits}</a>`;
+                    `<a href="${data.website}" target="_blank">&copy; ${data.credits}</a>`;
             }
             if ('title' in data) {
                 document.getElementById("cartoonista_title").innerHTML = data.title;
@@ -89,7 +89,7 @@ let cartoonista = {
         let t = event.target;
 
         // prevent no selected cartoonists
-        if (!t.checked && cartoonista.config.excluded_cartoonists.length === cartoonista.cartoonists.length) {
+        if (!t.checked && cartoonista.config.excluded_cartoonists.length === cartoonista.cartoonists.length - 1) {
             t.checked = true; return;
         }
 
@@ -102,7 +102,7 @@ let cartoonista = {
         localStorage.setItem("cartoonista.config", JSON.stringify(cartoonista.config))
     },
     open_config_modal: function () {
-        document.getElementById('cartoonista_config_window').style.display = "block";
+        document.getElementById('cartoonista_config_window').style.display = "flex";
     },
     close_config_modal: function () {
         document.getElementById('cartoonista_config_window').style.display = "none";

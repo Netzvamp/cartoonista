@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/static/cartoon.css">
 </head>
 <body>
-<div class="enjoy"><h2>Enjoy your day &#128516;</h2></div>
+<div class="enjoy">Enjoy your day &#128516;</div>
 
 <div><h1 id="cartoonista_title"></h1></div>
 <div id="cartoonista_cartoon"></div>
@@ -24,10 +24,10 @@
     </a>
 </div>
 <div id="cartoonista_config_window">
+    <a href="#" onclick="cartoonista.close_config_modal();"><span class="iconify" data-icon="carbon:close-filled" data-inline="false" data-width="20"></span></a>
     <form id="cartoonista_config">
         <div id="cartoonista_cartoonists"></div>
         <div id="cartoonista_tags"></div>
-        <input type="button" value="Close" onclick="cartoonista.close_config_modal();">
     </form>
 </div>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
