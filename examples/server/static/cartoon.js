@@ -40,7 +40,6 @@ let cartoonista = {
     },
     new_cartoon: async function () {
         await this.get_cartoon().then(data => {
-            console.log(data);
             let img = document.createElement('img');
             img.src = data.img;
             img.id = "cartoonista_image";
@@ -54,16 +53,16 @@ let cartoonista = {
             }
             c.append(img);
 
-            if (typeof data.txt !== "undefined") {
+            if ('txt' in data) {
                 document.getElementById("cartoonista_txt").innerHTML =
                     `${data.txt} <a href="${data.website}">&copy; ${data.credits}</a>`;
             } else {
                 document.getElementById("cartoonista_txt").innerHTML =
                     `<a href="${data.website}">&copy; ${data.credits}</a>`;
             }
-            if (typeof data.title !== "undefined") {
+            if ('title' in data) {
                 document.getElementById("cartoonista_title").innerHTML = data.title;
-            } else { document.getElementById("cartoonista_title").value = " "; }
+            } else { document.getElementById("cartoonista_title").innerHTML = ""; }
             cartoonista.resize_reset();
         })
     },
@@ -88,6 +87,12 @@ let cartoonista = {
     },
     config_event: function (event) {
         let t = event.target;
+
+        // prevent no selected cartoonists
+        if (!t.checked && cartoonista.config.excluded_cartoonists.length === cartoonista.cartoonists.length) {
+            t.checked = true; return;
+        }
+
         if (!t.checked && !cartoonista.config.excluded_cartoonists.includes(t.value)) {
             cartoonista.config.excluded_cartoonists.push(t.value);
         }
@@ -103,14 +108,24 @@ let cartoonista = {
         document.getElementById('cartoonista_config_window').style.display = "none";
     },
     resize: function () {
-        document.getElementById('cartoonista_image').style.maxHeight = 'none';
-        document.getElementById('cartoonista_cartoon').style.transform = 'translate(-50%,0)'
-        document.getElementById('cartoonista_cartoon').style.top = 0;
+        let i = document.getElementById('cartoonista_cartoon');
+        let img = document.getElementById('cartoonista_image');
+        if (img.style.maxHeight !== 'none') {
+            i.style.top = "6em";
+            i.style.transform = 'translate(-50%,0)';
+            img.style.maxHeight = 'none';
+            img.style.cursor = 'zoom-out';
+        } else {
+            cartoonista.resize_reset();
+        }
     },
     resize_reset: function () {
-        document.getElementById('cartoonista_image').style.maxHeight = '78vh';
-        document.getElementById('cartoonista_cartoon').style.transform = 'translate(-50%,-50%)'
-        document.getElementById('cartoonista_cartoon').style.top = "50%";
+        let i = document.getElementById('cartoonista_cartoon');
+        let img = document.getElementById('cartoonista_image');
+        i.style.top = "50%";
+        i.style.transform = 'translate(-50%,-50%)';
+        img.style.maxHeight = '78vh';
+        img.style.cursor = 'zoom-in';
     }
 };
 cartoonista.init();

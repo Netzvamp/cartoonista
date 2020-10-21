@@ -49,7 +49,7 @@ def la_scraper():
 
 if __name__ != "__main__":
     loadingartist = Cartoonist(
-        name="LoadingArtist_com",
+        name="loadingartist_com",
         credits="LoadingArtist.com",
         website="https://loadingartist.com",
         language="en",

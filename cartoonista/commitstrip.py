@@ -49,7 +49,7 @@ def commitstrip_scraper():
 
 if __name__ != "__main__":
     commitstrip = Cartoonist(
-        name="CommitStrip_com",
+        name="commitstrip_com",
         credits="CommitStrip.com",
         website="https://www.commitstrip.com",
         language="en",

@@ -16,7 +16,10 @@ def cartoonists():
 
 @app.route('/cartoon', methods=['POST', 'GET'])
 def cartoon():
-    return cartoonista.get_random_cartoon(exclude=request.json["excluded_cartoonists"])
+    try:
+        return cartoonista.get_random_cartoon(exclude=request.json["excluded_cartoonists"])
+    except cartoonista.CartoonError:
+        return {}
 
 
 if __name__ == '__main__':

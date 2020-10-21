@@ -32,7 +32,8 @@ This lib includes all scrapers for these sites, but it ships with all data, so t
     from cartoons import Cartoons
 
     Cartoons.get_random_cartoon(
-        cartoonists=["xkcd.com", "ruthe.de"],  # optional
+        include=["xkcd_com", "ruthe_de"],  # optional
+        exclude=["loadingartist_com", "commitstrip_com"],  # optional
         languages=["en"],  # optional
         exclude_tags=["offensive"],  # optional
         weighted=False  # optional
