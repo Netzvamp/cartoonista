@@ -1,0 +1,41 @@
+{% raw %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cartoonista</title>
+    <link rel="stylesheet" type="text/css" href="/static/cartoon.css">
+</head>
+<body>
+<div class="enjoy"><h2>Enjoy your day &#128516;</h2></div>
+
+<div id="cartoonista">
+<div><h1 id="cartoonista_title"></h1></div>
+<div id="cartoonista_cartoon">{{ cartoon.img }}</div>
+<div id="cartoonista_txt"></div>
+<div id="cartoonista_random">
+    <a href="#" onclick="get_new_cartoon()">
+        <span class="iconify" data-icon="ion:dice" data-inline="false" data-width="100"></span>
+    </a>
+</div>
+</div>
+
+
+<div id="show_cartoonista_config">
+    <a href="#" onclick="cartoonista.open_config_modal()">
+        <span class="iconify" data-icon="bi:gear-fill" data-inline="false" data-width="45"></span>
+    </a>
+</div>
+<div id="cartoonista_config_window">
+    <form id="cartoonista_config">
+        <div id="cartoonista_cartoonists"></div>
+        <div id="cartoonista_tags"></div>
+        <input type="button" value="Close" onclick="cartoonista.close_config_modal();">
+    </form>
+</div>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="/static/cartoon_vue.js"></script>
+</body>
+</html>
+{% endraw %}
