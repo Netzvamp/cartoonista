@@ -25824,11 +25824,19 @@
             {
                 "img": "comics/Dave/trunky.png?t=381A4B",
                 "txt": "2020.10.20 by Dave McElfatrick"
+            },
+            {
+                "img": "comics/Kris/replaced.png?t=615D46",
+                "txt": "2020.10.21 by Kris Wilson"
             }
         ]
     },
     "islieb_de": {
         "filenames": [
+            {
+                "img": "2020/10/unmotivation-islieb.png",
+                "title": "Unmotivation"
+            },
             {
                 "img": "2020/10/kunst-islieb.png",
                 "title": "Kunst"
@@ -67016,7 +67024,7 @@
                 "txt": "After extensive research it turns out that three things is too much things."
             },
             {
-                "img": "1571057817-20191014.png",
+                "img": "1603307019-20191014.png",
                 "txt": "Eternal gratitude to my patreon subscribers who realized that the original version of this had the wrong value. Nerds."
             },
             {
@@ -68470,11 +68478,80 @@
             {
                 "img": "1601913259-20201005.png",
                 "txt": "Bless you, patreon typo squad. You are the sexiest of symposia."
+            },
+            {
+                "img": "1602001134-20201006.png",
+                "txt": "Just to be clear, the drawing in panel 5 does not want to talk about your relationship. Please proceed to the end of the comic."
+            },
+            {
+                "img": "1602086497-20201007.png",
+                "txt": "Sorry, no, chimps can't shave themselves. Deal with it."
+            },
+            {
+                "img": "1602166665-20201008.png",
+                "txt": "Imagine having to lay abed night after night, knowing that you'll never have any first edition holofoils."
+            },
+            {
+                "img": "1602257936-20201009.png",
+                "txt": "I hereby release this to anyone wanting to be as condescending as I am."
+            },
+            {
+                "img": "1602342519-20201010.png",
+                "txt": "The so-called Surprise Test Paradox can be resolved by delivering it one second after midnight on the last day of the week."
+            },
+            {
+                "img": "1602431675-20201011.png",
+                "txt": "Of course in real life there wouldn't be pants."
+            },
+            {
+                "img": "1602518057-20201012.png",
+                "txt": "Nature doesn't exactly want you dead, but it certainly doesn't want you alive."
+            },
+            {
+                "img": "1602595811-20201013.png",
+                "txt": "I used to watch a lot of news and commentary until one day I tried to tally up what I had learned during a month of it and found the quantity of facts could fit on a postage stamp."
+            },
+            {
+                "img": "1602690583-20201014.png",
+                "txt": "Kelly told me the first two panels were a bit much, but so far I haven't been struck by lightning, so I think we're good."
+            },
+            {
+                "img": "1602766236-20201015.png",
+                "txt": "In real life, the kid would assume this was all real and feel very proud of making the card."
+            },
+            {
+                "img": "1602862838-20201016.png",
+                "txt": "If you're married and have kids, you can say 'I've sown some domesticated oats.'"
+            },
+            {
+                "img": "1602950147-20201017.png",
+                "txt": "Someone on patreon pointed out that the small mammal sure looks like the infamous hedgefox of comics past, which makes perfect sense in context."
+            },
+            {
+                "img": "1603031866-20201018.png",
+                "txt": "Nothing will ruin space for you like reading the political history of how decisions were made."
+            },
+            {
+                "img": "1603104929-20201019.png",
+                "txt": "I tried to read that book but there are too many numbers at not enough pictures."
+            },
+            {
+                "img": "1603210482-20201020.png",
+                "txt": "Thanks, ultra-satanist reptiloids!"
+            },
+            {
+                "img": "1603282924-20201021.png",
+                "txt": "Wait, the guy in panel 1, why aren't his fingers touching the buttons of the mouse?"
             }
         ]
     },
     "xkcd_com": {
         "filenames": [
+            {
+                "img": "worst_ladder.png",
+                "title": "Worst Ladder",
+                "txt": "[Six months later] \"Well, our 'worst ladder' subscription series was a surprisingly lucrative success, but was completely canceled out by the losses from the disastrous Home Depot merchandising tie-in.\""
+            },
             {
                 "img": "10000_hours.png",
                 "title": "10,000 Hours",

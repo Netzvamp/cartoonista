@@ -19,4 +19,4 @@ from .exceptions import CartoonError
 get_random_cartoon = Cartoons.get_random_cartoon
 get_all_cartoonists = Cartoons.get_all_cartoonists
 
-__version__ = "0.4.3"
+__version__ = "0.5.0"

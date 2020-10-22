@@ -25,8 +25,8 @@ setuptools.setup(
     project_urls={
         "Documentation": "https://github.com/Netzvamp/cartoonista"
     },
-    packages=["cartoons"],
-    package_data={'cartoons': ['cartoons.json']},
+    packages=["cartoonista"],
+    package_data={'cartoonista': ['cartoons.json']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",

@@ -1,2 +1,2 @@
 include *.json
-recursive-include cartoons *.json
+recursive-include cartoonista *.json
