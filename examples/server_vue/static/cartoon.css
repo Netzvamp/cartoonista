@@ -1,0 +1,91 @@
+html { height:100%; }
+body {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    min-height: 100%;
+    background: linear-gradient(
+            to bottom, rgba(216, 246, 255, 1) 0%, rgba(255, 255, 255, 0.32) 68%, rgba(255, 255, 255, 0) 100%);
+}
+
+.enjoy {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    z-index: 200;
+    transform: rotate(-30deg);
+    color: #ff8300;
+}
+
+#cartoonista_cartoon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-bottom: 100px;
+}
+
+#cartoonista_txt {
+    position: fixed;
+    bottom: 0;
+    min-height: 50px;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: 2px dotted #afafaf;
+    background: #ffffff;
+}
+
+#cartoonista_cartoon > img {
+    background: #ffffff;
+    max-height: 78vh;
+    min-height: 45vh;
+    cursor: zoom-in;
+}
+
+#cartoonista_random {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    color: #ff8300;
+    border: solid #ff8300;
+    border-width: 4px 0 4px 4px;
+    border-radius: 20px 0 0 20px;
+    padding: 0;
+    background: #ff8300;
+}
+#cartoonista_random a { color: #ffffff; }
+#cartoonista_random a:hover { color: #ffb677; }
+
+#show_cartoonista_config {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 20px;
+    padding: 10px;
+    background: #ff8300;
+}
+#show_cartoonista_config a { color: #ffffff; }
+#show_cartoonista_config a:hover { color: #ffb677; }
+
+#cartoonista_config_window {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 300px;
+    width: 400px;
+    background: lightgray;
+}
+
+a {
+    color: #ff7f00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff0000;
+}
