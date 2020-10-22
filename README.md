@@ -13,6 +13,7 @@ English:
 * https://loadingartist.com/
 * https://www.smbc-comics.com
 * https://www.commitstrip.com
+* https://jamesofnotrades.com
 
 German:
 * https://joscha.com/nichtlustig

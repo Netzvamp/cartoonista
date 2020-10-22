@@ -13,16 +13,16 @@ for c in cartoonists:
 print("Nr of cartoons:", nr)
 
 print("Random without filter", Cartoons.get_random_cartoon())
-print("Only ruthe.de or xkcd.com", Cartoons.get_random_cartoon(include=["xkcd.com", "ruthe.de"]))
+print("Only ruthe.de or xkcd.com", Cartoons.get_random_cartoon(include=["xkcd_com", "ruthe_de"]))
 print("Only english", Cartoons.get_random_cartoon(languages=["en"]))
 print("Filter given include list by language: xkcd.com, ruthe.de, nichtlustig.de and en", Cartoons.get_random_cartoon(
-    include=["xkcd.com", "ruthe.de", "nichtlustig.de"], languages=["en"]))
-print("Single Cartoonist: schoenescheisse.de", Cartoons.get_random_cartoon(include=["schoenescheisse.de"]))
+    include=["xkcd_com", "ruthe_de", "nichtlustig_de"], languages=["en"]))
+print("Single Cartoonist: schoenescheisse.de", Cartoons.get_random_cartoon(include=["schoenescheisse_de"]))
 
 print(
     "Filter by tag: exclude offensive",
     Cartoons.get_random_cartoon(
-        include=["xkcd.com", "explosm.net", "martin-perscheid.de"], exclude_tags=["offensive"]
+        include=["xkcd_com", "explosm_net", "martin-perscheid_de"], exclude_tags=["offensive"]
     )
 )  # returns only xkcd, cause they aren't offensive (to me ;) )
 
